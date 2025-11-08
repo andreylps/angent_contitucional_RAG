@@ -43,6 +43,8 @@ dependencies = [ # Lista consolidada para resolver conflitos
     "pandas>=2.3.3",
     "plotly>=6.4.0",
     "tavily-python",
+    "fastapi>=0.121.0",
+    "uvicorn[standard]>=0.38.0",
 ]
 
 [project.urls]

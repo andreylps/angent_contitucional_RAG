@@ -2153,3 +2153,15 @@
 2025-11-08 11:12:48,430 [INFO] - Use pytorch device: cpu
 2025-11-08 11:12:50,157 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-11-08 11:13:04,618 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 11:25:45,063 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-08 11:25:46,266 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-08 11:25:46,442 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 11:25:50,130 [INFO] - Use pytorch device: cpu
+2025-11-08 11:25:50,479 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 11:25:53,718 [INFO] - Use pytorch device: cpu
+2025-11-08 11:25:54,061 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 11:25:57,262 [INFO] - Use pytorch device: cpu
+2025-11-08 11:34:04,252 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 11:34:06,430 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 11:34:08,135 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 11:34:13,522 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

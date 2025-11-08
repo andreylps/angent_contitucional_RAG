@@ -76,9 +76,10 @@ Agora que a base está sólida, podemos focar em melhorias incrementais para aum
     - **Implementação:** Quando o roteador classifica uma pergunta como `out_of_context`, o `MultiAgentManager` agora aciona uma `WebSearchTool` que busca informações em uma lista pré-definida de sites confiáveis (gov.br, stf.jus.br, etc.). A resposta gerada cita as fontes e inclui um aviso de validação.
     - **Benefício Alcançado:** O sistema agora pode responder a uma gama muito maior de perguntas, mesmo fora de seus domínios de especialidade, agindo como um pesquisador responsável.
 
-6.  **Criação de uma API (v0.6): - A IMPLANTAR**
+6.  **✅ Criação de uma API (v0.6 - CONCLUÍDO):**
 
-    - **Proposta:** Expor o `MultiAgentManager` através de uma API REST simples usando **FastAPI**. Isso desacopla o backend da interface e permite que múltiplos clientes (web, mobile, etc.) consumam o serviço.
+    - **Implementação:** A lógica do `MultiAgentManager` foi exposta através de uma API REST usando **FastAPI**. A API inclui validação de dados com Pydantic e documentação automática interativa via Swagger UI.
+    - **Benefício Alcançado:** O sistema agora é um serviço desacoplado, robusto e pronto para ser consumido por diferentes interfaces (front-end, chatbots, etc.).
 
 7.  **Interface Web para Demonstração (v0.7): - A IMPLANTAR**
 
