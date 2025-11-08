@@ -8,6 +8,8 @@ import os
 from typing import Any
 
 from dotenv import load_dotenv
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 
 # Carrega variáveis do .env
@@ -21,6 +23,19 @@ from .agents.human_rights_agent import HumanRightsAgent  # noqa: E402
 from .agents.router_agent import LegalRouterAgent  # noqa: E402
 from .pipelines.specialized_retrievers import (  # noqa: E402
     create_specialized_retriever,
+)
+
+# ✅ v0.3.1: Template para re-escrever a pergunta com base no histórico (movido para o Manager)
+REWRITE_QUERY_PROMPT = PromptTemplate(
+    input_variables=["chat_history", "question"],
+    template="""Dada a conversa a seguir e uma pergunta de acompanhamento, reformule a pergunta de acompanhamento para ser uma pergunta independente que possa ser entendida sem o histórico.
+
+Histórico da Conversa:
+{chat_history}
+
+Pergunta de Acompanhamento: {question}
+
+Pergunta Independente:""",
 )
 
 
@@ -43,6 +58,9 @@ class MultiAgentManager:
 
         # Inicializa os agentes especializados
         self.agents: dict[str, Any] = self._initialize_agents()
+
+        # ✅ v0.3: Adiciona um estado para armazenar o histórico da conversa
+        self.conversation_history: list[dict[str, Any]] = []
 
         print("✅ MultiAgentManager inicializado com sucesso!")
         print("   - Router Agent: Pronto")
@@ -90,15 +108,38 @@ class MultiAgentManager:
 
         return agents
 
-    async def process_query(
-        self, query: str, conversation_history: list[dict[str, Any]] | None = None
-    ) -> dict[str, Any]:
+    async def _rewrite_query_with_history(self, question: str) -> str:
+        """Se houver histórico, re-escreve a pergunta para ser autônoma."""
+        if not self.conversation_history:
+            return question
+
+        print("   [Manager] Reescrevendo a pergunta com base no histórico...")
+
+        # Formata o histórico para o prompt
+        formatted_history = "\n".join(
+            [f"{msg['role']}: {msg['content']}" for msg in self.conversation_history]
+        )
+
+        rewrite_chain = REWRITE_QUERY_PROMPT | self.llm | StrOutputParser()
+
+        try:
+            rewritten_question = await rewrite_chain.ainvoke(
+                {"chat_history": formatted_history, "question": question}
+            )
+            print(f"   [Manager] Pergunta reescrita: '{rewritten_question}'")
+            return rewritten_question
+        except Exception as e:
+            print(
+                f"   ⚠️ [Manager] Erro ao reescrever pergunta: {e}. Usando a pergunta original."
+            )
+            return question
+
+    async def process_query(self, query: str) -> dict[str, Any]:
         """
         Processa uma consulta usando o sistema multiagente
 
         Args:
             query: Pergunta do usuário
-            conversation_history: Histórico da conversa (opcional)
 
         Returns:
             Dict com resposta completa e metadados
@@ -106,8 +147,11 @@ class MultiAgentManager:
         print(f"🔍 Processando consulta: '{query}'")
 
         try:
-            # 1. Roteamento - decide quais agentes usar
-            routing_decision = self.router.get_routing_decision(query)
+            # 1. ✅ v0.3.1: Reescreve a pergunta ANTES do roteamento
+            standalone_query = await self._rewrite_query_with_history(query)
+
+            # 2. Roteamento - decide quais agentes usar com base na pergunta completa
+            routing_decision = self.router.get_routing_decision(standalone_query)
             print(f"   🎯 Roteamento: {routing_decision['selected_agents']}")
             print(f"   📊 Scores: {routing_decision['domain_scores']}")
 
@@ -129,14 +173,20 @@ class MultiAgentManager:
                     "status": "out_of_context",
                 }
 
-            # 2. Executa os agentes selecionados
+            # 3. Executa os agentes selecionados
             agent_responses = await self._execute_agents(
-                query, routing_decision["selected_agents"], conversation_history
+                standalone_query, routing_decision["selected_agents"]
             )
 
-            # 3. Combina resultados
+            # 4. Combina resultados
             final_response = self._combine_responses(
                 query, agent_responses, routing_decision
+            )
+
+            # ✅ v0.3: Atualiza o histórico da conversa com a nova interação
+            self.conversation_history.append({"role": "user", "content": query})
+            self.conversation_history.append(
+                {"role": "assistant", "content": final_response["final_answer"]}
             )
 
             print(
@@ -148,11 +198,13 @@ class MultiAgentManager:
             print(f"❌ Erro no processamento: {e}")
             return self._create_error_response(query, str(e))
 
+    def clear_history(self) -> None:
+        """Limpa o histórico da conversa."""
+        self.conversation_history = []
+        print("   🧹 Histórico da conversa limpo.")
+
     async def _execute_agents(
-        self,
-        query: str,
-        selected_agents: list[str],
-        conversation_history: list[dict[str, Any]] | None = None,
+        self, query: str, selected_agents: list[str]
     ) -> list[dict[str, Any]]:
         """Executa os agentes selecionados em paralelo"""
         tasks = []
@@ -160,9 +212,12 @@ class MultiAgentManager:
         for domain in selected_agents:
             agent = self.agents.get(domain)
             if agent:
+                # ✅ v0.3: Passa o histórico da conversa para o agente
                 # Executa cada agente
-                task = asyncio.create_task(
-                    self._run_agent_safe(agent, query, conversation_history)
+                task = (
+                    asyncio.create_task(  # ✅ CORREÇÃO: Usa self.conversation_history
+                        self._run_agent_safe(agent, query, self.conversation_history)
+                    )
                 )
                 tasks.append(task)
 
@@ -183,12 +238,20 @@ class MultiAgentManager:
         self,
         agent: Any,
         query: str,
-        history: list[dict[str, Any]] | None = None,
+        conversation_history: list[dict[str, Any]],
     ) -> dict[str, Any]:
         """Executa um agente com tratamento de erro"""
         try:
-            # ✅ CORREÇÃO V0.2: Passa a query como um dicionário, conforme esperado pelo agente.
-            return await agent.invoke({"query": query})
+            # ✅ v0.3: Passa a query e o histórico para o agente.
+            return await agent.invoke(
+                {
+                    "query": query,  # Esta é a standalone_query
+                    "original_query": conversation_history[-1]["content"]
+                    if conversation_history
+                    else query,  # Passa a última pergunta do usuário
+                    "conversation_history": conversation_history,
+                }
+            )
         except Exception as e:  # noqa: BLE001
             return {
                 "agent": agent.name,
@@ -297,8 +360,6 @@ class MultiAgentManager:
         }
 
     # Método síncrono para facilitar o uso
-    def process_query_sync(
-        self, query: str, conversation_history: list[dict[str, Any]] | None = None
-    ) -> dict[str, Any]:
+    def process_query_sync(self, query: str) -> dict[str, Any]:
         """Versão síncrona do process_query para facilitar o uso"""
-        return asyncio.run(self.process_query(query, conversation_history))
+        return asyncio.run(self.process_query(query))

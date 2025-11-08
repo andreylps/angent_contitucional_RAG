@@ -60,9 +60,11 @@ Agora que a base está sólida, podemos focar em melhorias incrementais para aum
 
 ### FASE 2: INTELIGÊNCIA E MEMÓRIA (v0.3 → v0.4)
 
-3.  **Memória Conversacional (v0.3):**
-    - **Proposta:** Implementar um sistema de gerenciamento de histórico de conversa. O `MultiAgentManager` passaria o histórico relevante para os agentes, permitindo perguntas de acompanhamento (follow-up).
-    - **Benefício:** Transforma o sistema de um simples "pergunta e resposta" para um verdadeiro assistente conversacional, capaz de entender o contexto de diálogos.
+3.  **✅ Memória Conversacional (v0.3 - CONCLUÍDO):**
+
+    - **Implementação:** O `MultiAgentManager` agora gerencia o histórico da conversa. Ele utiliza o LLM para re-escrever perguntas de acompanhamento, transformando-as em perguntas autônomas antes de enviá-las ao roteador. Os agentes foram atualizados para usar o histórico para fornecer respostas mais contextuais.
+    - **Benefício Alcançado:** O sistema agora é um assistente conversacional, capaz de entender e responder a perguntas de acompanhamento de forma natural e precisa.
+
 4.  **Logging e Monitoramento Avançado (v0.4):**
     - **Proposta:** Registrar todas as interações (pergunta, decisão do roteador, resposta, confiança, fontes) em um formato estruturado (JSON ou banco de dados). Criar um dashboard simples (ex: com Streamlit ou Dash) para visualizar essas interações.
     - **Benefício:** Facilita a identificação de pontos fracos, perguntas mal respondidas e oportunidades de melhoria contínua.

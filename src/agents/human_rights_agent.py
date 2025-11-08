@@ -35,16 +35,20 @@ class HumanRightsAgent:
     def _create_final_answer_prompt(self) -> PromptTemplate:
         """Cria o prompt final para gerar a resposta com base no contexto."""
         return PromptTemplate(
-            input_variables=["context", "question"],
-            template="""Você é um assistente especialista em Direitos Humanos, com foco na Convenção Americana de Direitos Humanos (CADH). Sua tarefa é responder à pergunta do usuário de forma clara, concisa e bem estruturada, baseando-se exclusivamente nos trechos de documentos fornecidos no contexto.
+            input_variables=["context", "question", "chat_history"],
+            template="""Você é um assistente especialista em Direitos Humanos, com foco na Convenção Americana de Direitos Humanos (CADH). Sua tarefa é responder à pergunta do usuário de forma clara e concisa, baseando-se exclusivamente nos trechos de documentos fornecidos no contexto e considerando o histórico da conversa.
 
 **Instruções Importantes:**
+1.  **Foque na Pergunta Atual:** Use o histórico da conversa para entender o contexto, mas sua resposta deve focar em responder diretamente à última pergunta do usuário.
 1.  **Sintetize a Informação:** Os documentos no contexto são fragmentos. Sua principal tarefa é conectar as informações de múltiplos fragmentos para construir uma resposta completa.
 2.  **Seja Exclusivo:** Responda APENAS com base no contexto. Não utilize nenhum conhecimento prévio.
 3.  **Seja Honesto:** Se, após analisar todos os fragmentos, a informação para responder à pergunta não estiver presente, informe que não foi possível encontrar uma resposta conclusiva nos documentos consultados.
 
 Contexto:
 {context}
+
+Histórico da Conversa:
+{chat_history}
 
 Pergunta: {question}
 
@@ -100,12 +104,14 @@ Resposta:""",
 
     async def invoke(self, inputs: dict[str, Any]) -> dict[str, Any]:
         """Invoca o agente com a lógica Multi-Query e Re-ranking."""
-        query = inputs["query"]
+        standalone_query = inputs["query"]
+        original_query = inputs.get("original_query", standalone_query)
+        conversation_history = inputs.get("conversation_history", [])
 
         print(f"   🚀 Agente '{self.name}' invocado para o domínio '{self.domain}'")
-        queries = await self._generate_queries(query)
+        queries = await self._generate_queries(standalone_query)
         documents = await self._get_unique_documents(queries)
-        final_documents = await self._rerank_documents(query, documents)
+        final_documents = await self._rerank_documents(standalone_query, documents)
 
         if not final_documents:
             return {
@@ -119,7 +125,18 @@ Resposta:""",
 
         context = "\n\n---\n\n".join([doc.page_content for doc in final_documents])
         final_chain = self.final_answer_prompt | self.llm | StrOutputParser()
-        answer = await final_chain.ainvoke({"context": context, "question": query})
+
+        formatted_history = "\n".join(
+            [f"{msg['role']}: {msg['content']}" for msg in conversation_history]
+        )
+
+        answer = await final_chain.ainvoke(
+            {
+                "context": context,
+                "question": original_query,
+                "chat_history": formatted_history,
+            }
+        )
         sources = list(
             set(doc.metadata.get("file_name", "N/A") for doc in final_documents)
         )
