@@ -28,7 +28,7 @@ dependencies = [ # Lista consolidada para resolver conflitos
     "beautifulsoup4>=4.14.2",
     "pypdf2>=3.0.1",
     "pdf2image>=1.17.0", # Dependência para OCR
-    "pytesseract",      # Dependência para OCR
+    "pytesseract", # Dependência para OCR
     # Utilities
     "python-dotenv>=1.2.1",
     "rich>=14.1.0",
@@ -38,6 +38,7 @@ dependencies = [ # Lista consolidada para resolver conflitos
     "sentence-transformers>=5.1.2",
     "numpy>=2.3.4",
     "scikit-learn>=1.7.2",
+    "torch>=2.9.0",
 ]
 
 [project.urls]

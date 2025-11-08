@@ -6,6 +6,8 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import Runnable
 
+from ..utils.cross_encoder_reranker import CrossEncoderReRanker
+
 # Template de prompt para gerar variações da pergunta original
 MULTI_QUERY_PROMPT = PromptTemplate(
     input_variables=["question"],
@@ -28,6 +30,7 @@ class ConstitutionalAgent:
         self.retriever = retriever
         self.llm = llm
         self.final_answer_prompt = self._create_final_answer_prompt()
+        self.reranker = CrossEncoderReRanker()
 
     def _create_final_answer_prompt(self) -> PromptTemplate:
         """Cria o prompt final para gerar a resposta com base no contexto."""
@@ -92,51 +95,32 @@ Resposta:""",
     async def _rerank_documents(
         self, query: str, documents: list[Document]
     ) -> list[Document]:
-        """Usa o LLM para reordenar e selecionar os documentos mais relevantes."""
+        """
+        ✅ v0.2: Usa o CrossEncoder para reordenar os documentos.
+        Esta função é executada em um thread separado para não bloquear o loop de eventos.
+        """
         if not documents:
             return []
 
-        print(f"   [{self.name}] Reordenando {len(documents)} documentos...")
-        # Formata os documentos para o prompt de re-ranking
-        doc_texts = []
-        for i, doc in enumerate(documents):
-            doc_texts.append(f"ID do Documento: [{i}]\nConteúdo: {doc.page_content}")
-        formatted_docs = "\n\n---\n\n".join(doc_texts)
-
-        rerank_prompt = PromptTemplate.from_template(
-            """Você é um assistente de IA especialista em análise de relevância. Sua tarefa é analisar uma lista de documentos e uma pergunta, e retornar os IDs dos 4 documentos mais relevantes para responder à pergunta.
-
-Documentos:
-{documents}
-
-Pergunta: {question}
-
-Responda APENAS com uma lista de IDs dos 4 documentos mais relevantes, separados por vírgula. Exemplo: [0], [3], [1], [8]"""
-        )
-        rerank_chain = rerank_prompt | self.llm | StrOutputParser()
-        response = await rerank_chain.ainvoke(
-            {"documents": formatted_docs, "question": query}
+        print(
+            f"   [{self.name}] Reordenando {len(documents)} documentos com CrossEncoder..."
         )
 
-        try:
-            # Extrai os IDs da resposta do LLM
-            relevant_ids = [int(id_str.strip("[] ")) for id_str in response.split(",")]
-            # Seleciona os documentos reordenados
-            reranked_docs = [documents[i] for i in relevant_ids if i < len(documents)]
-            print(
-                f"   [{self.name}] Documentos reordenados e selecionados: {len(reranked_docs)}"
-            )
-            return reranked_docs
-        except (ValueError, IndexError):
-            print(
-                f"   ⚠️ [{self.name}] Erro ao reordenar. Usando os 4 primeiros documentos como fallback."
-            )
-            return documents[:4]
+        loop = asyncio.get_event_loop()
+        # A lógica de re-ranking agora é chamada diretamente no executor.
+        reranked_docs: list[Document] = await loop.run_in_executor(  # type: ignore
+            None, self.reranker.rerank, query, documents
+        )
+        print(
+            f"   [{self.name}] Documentos reordenados e selecionados: {len(reranked_docs)}"
+        )
+        return reranked_docs
 
-    async def invoke(self, query: str) -> dict[str, Any]:
+    async def invoke(self, inputs: dict[str, Any]) -> dict[str, Any]:
         """
         Invoca o agente com a lógica Multi-Query.
         """
+        query = inputs["query"]
         print(f"   🚀 Agente '{self.name}' invocado para o domínio '{self.domain}'")
 
         # 1. Gerar múltiplas perguntas
@@ -145,10 +129,10 @@ Responda APENAS com uma lista de IDs dos 4 documentos mais relevantes, separados
         # 2. Recuperar documentos únicos usando todas as perguntas
         documents = await self._get_unique_documents(queries)
 
-        # 3. NOVO (v0.1.1): Reordena e seleciona os melhores documentos
+        # 3. ✅ v0.2: Reordena e seleciona os melhores documentos com CrossEncoder
         final_documents = await self._rerank_documents(query, documents)
 
-        if not documents:
+        if not final_documents:
             return {
                 "agent": self.name,
                 "agent_domain": self.domain,

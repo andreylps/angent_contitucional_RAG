@@ -6,6 +6,8 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import Runnable
 
+from ..utils.cross_encoder_reranker import CrossEncoderReRanker
+
 # Template de prompt para gerar variações da pergunta original (reutilizado)
 MULTI_QUERY_PROMPT = PromptTemplate(
     input_variables=["question"],
@@ -28,6 +30,7 @@ class HumanRightsAgent:
         self.retriever = retriever
         self.llm = llm
         self.final_answer_prompt = self._create_final_answer_prompt()
+        self.reranker: CrossEncoderReRanker | None = None
 
     def _create_final_answer_prompt(self) -> PromptTemplate:
         """Cria o prompt final para gerar a resposta com base no contexto."""
@@ -75,37 +78,31 @@ Resposta:""",
     async def _rerank_documents(
         self, query: str, documents: list[Document]
     ) -> list[Document]:
-        """Usa o LLM para reordenar e selecionar os documentos mais relevantes."""
+        """Usa o CrossEncoder para reordenar os documentos."""
         # Reutiliza a mesma lógica dos outros agentes
         if not documents:
             return []
-        doc_texts = [
-            f"ID do Documento: [{i}]\nConteúdo: {doc.page_content}"
-            for i, doc in enumerate(documents)
-        ]
-        formatted_docs = "\n\n---\n\n".join(doc_texts)
-        rerank_prompt = PromptTemplate.from_template(
-            """Você é um assistente de IA especialista em análise de relevância. Sua tarefa é analisar uma lista de documentos e uma pergunta, e retornar os IDs dos 4 documentos mais relevantes para responder à pergunta.
 
-Documentos:
-{documents}
+        if self.reranker is None:
+            self.reranker = CrossEncoderReRanker()
 
-Pergunta: {question}
-
-Responda APENAS com uma lista de IDs dos 4 documentos mais relevantes, separados por vírgula. Exemplo: [0], [3], [1], [8]"""
+        print(
+            f"   [{self.name}] Reordenando {len(documents)} documentos com CrossEncoder..."
         )
-        rerank_chain = rerank_prompt | self.llm | StrOutputParser()
-        response = await rerank_chain.ainvoke(
-            {"documents": formatted_docs, "question": query}
+        loop = asyncio.get_event_loop()
+        reranked_docs: list[Document] = await loop.run_in_executor(  # type: ignore
+            None, self.reranker.rerank, query, documents
         )
-        try:
-            relevant_ids = [int(id_str.strip("[] ")) for id_str in response.split(",")]
-            return [documents[i] for i in relevant_ids if i < len(documents)]
-        except (ValueError, IndexError):
-            return documents[:4]
+        print(
+            f"   [{self.name}] Documentos reordenados e selecionados: {len(reranked_docs)}"
+        )
+        return reranked_docs
 
-    async def invoke(self, query: str) -> dict[str, Any]:
+    async def invoke(self, inputs: dict[str, Any]) -> dict[str, Any]:
         """Invoca o agente com a lógica Multi-Query e Re-ranking."""
+        query = inputs["query"]
+
+        print(f"   🚀 Agente '{self.name}' invocado para o domínio '{self.domain}'")
         queries = await self._generate_queries(query)
         documents = await self._get_unique_documents(queries)
         final_documents = await self._rerank_documents(query, documents)

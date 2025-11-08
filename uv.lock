@@ -37,6 +37,7 @@ dependencies = [
     { name = "scikit-learn" },
     { name = "sentence-transformers" },
     { name = "tiktoken" },
+    { name = "torch" },
     { name = "tqdm" },
 ]
 
@@ -68,6 +69,7 @@ requires-dist = [
     { name = "scikit-learn", specifier = ">=1.7.2" },
     { name = "sentence-transformers", specifier = ">=5.1.2" },
     { name = "tiktoken" },
+    { name = "torch", specifier = ">=2.9.0" },
     { name = "tqdm", specifier = ">=4.67.1" },
 ]
 

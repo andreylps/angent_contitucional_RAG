@@ -187,8 +187,8 @@ class MultiAgentManager:
     ) -> dict[str, Any]:
         """Executa um agente com tratamento de erro"""
         try:
-            # ✅ CORREÇÃO V0.1: Adiciona 'await' para chamar o método assíncrono do agente.
-            return await agent.invoke(query)
+            # ✅ CORREÇÃO V0.2: Passa a query como um dicionário, conforme esperado pelo agente.
+            return await agent.invoke({"query": query})
         except Exception as e:  # noqa: BLE001
             return {
                 "agent": agent.name,

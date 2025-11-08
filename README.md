@@ -54,9 +54,9 @@ Agora que a base está sólida, podemos focar em melhorias incrementais para aum
       2.  **Refinamento de Contexto (LLM-based Re-ranking):** O agente usa o próprio LLM para analisar os documentos encontrados e selecionar os 4 mais relevantes.
     - **Benefício Alcançado:** Respostas significativamente mais precisas, completas e com menos falhas por "contexto perdido".
 
-2.  **Refinamento Avançado com Cross-Encoder (v0.2):**
-    - **Proposta:** Substituir o re-ranking baseado em LLM por um modelo **Cross-Encoder** especializado (ex: `cross-encoder/ms-marco-MiniLM-L-6-v2`).
-    - **Benefício:** Aumenta ainda mais a precisão do re-ranking, sendo mais rápido e barato que usar o LLM para esta tarefa, otimizando a performance e os custos do sistema.
+2.  **✅ Refinamento Avançado com Cross-Encoder (v0.2 - CONCLUÍDO):**
+    - **Implementação:** O re-ranking baseado em LLM foi substituído por um modelo **Cross-Encoder** especializado (`cross-encoder/ms-marco-MiniLM-L-6-v2`), que é executado localmente.
+    - **Benefício Alcançado:** Aumentou a precisão do re-ranking, reduziu a latência e eliminou o custo de API para esta etapa, otimizando a performance e os custos operacionais do sistema.
 
 ### FASE 2: INTELIGÊNCIA E MEMÓRIA (v0.3 → v0.4)
 
@@ -75,6 +75,27 @@ Agora que a base está sólida, podemos focar em melhorias incrementais para aum
     - **Proposta:** Construir uma interface de chat básica usando **Streamlit** ou **Gradio**. É rápido de implementar e perfeito para demonstrações e testes internos.
 7.  **Conteinerização e Deploy:**
     - **Proposta:** Empacotar a aplicação em um contêiner **Docker** para facilitar o deploy em qualquer ambiente de nuvem (AWS, GCP, Azure) ou servidor local.
+
+### FASE 4: EXPANSÃO E ESCALABILIDADE (Pós-v1.0)
+
+8.  **Expansão do Time de Agentes (v1.1):**
+
+    - **Proposta:** Incluir novos agentes especialistas para cobrir mais áreas do direito, utilizando a arquitetura v0.1 como base.
+      - **Agente de Direito Trabalhista** (Base: CLT)
+      - **Agente de Direito Previdenciário** (Base: Leis de Custeio e Benefícios)
+      - **Agente de Direito Tributário** (Base: Código Tributário Nacional)
+    - **Benefício:** Aumenta drasticamente a utilidade e o escopo de aplicação do sistema.
+
+9.  **Evolução da Pipeline de Dados (v1.2):**
+
+    - **Proposta:** Migrar a gestão de documentos de arquivos locais para um sistema mais robusto, capaz de lidar com atualizações constantes (adição e modificação de leis).
+    - **Tecnologia Sugerida:** Utilizar um banco de dados vetorial gerenciado como **Pinecone**, **Weaviate** ou **Qdrant Cloud**, que simplificam a atualização e o versionamento de documentos.
+    - **Benefício:** Garante que o sistema esteja sempre atualizado com a legislação mais recente, de forma automatizada e confiável.
+
+10. **Deploy em VPS com Alta Disponibilidade (v1.3):**
+    - **Proposta:** Criar uma infraestrutura de deploy robusta na VPS, focada em automação e resiliência.
+    - **Tecnologias Sugeridas:** **Docker** e **Docker Compose** para containerização, **GitHub Actions** para CI/CD (implantação contínua), e ferramentas de monitoramento para garantir que o sistema se recupere de falhas automaticamente.
+    - **Benefício:** Garante que a aplicação opere de forma robusta, automatizada e resiliente em um ambiente de produção.
 
 ---
 
