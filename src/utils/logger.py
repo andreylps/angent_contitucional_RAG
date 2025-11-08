@@ -4,52 +4,23 @@ Sistema de logging para o projeto RAG Jurídico
 """
 
 import logging
-import os
-import sys
+from pathlib import Path
 
+# Define o caminho para logs
+LOG_DIR = Path(__file__).resolve().parent.parent / "logs"
+LOG_DIR.mkdir(exist_ok=True)
 
-def setup_logger(
-    name: str = "rag_juridico", level: int = logging.INFO
-) -> logging.Logger:
-    """
-    Configura e retorna um logger
+LOG_FILE = LOG_DIR / "app.log"
 
-    Args:
-        name: Nome do logger
-        level: Nível de log
+# Configuração básica do logger
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] - %(message)s",
+    handlers=[logging.FileHandler(LOG_FILE, encoding="utf-8"), logging.StreamHandler()],
+)
 
-    Returns:
-        Logger configurado
-    """
-    logger = logging.getLogger(name)
+# Cria instância global de logger
+logger = logging.getLogger("constitutional_rag")
 
-    # Evita múltiplos handlers
-    if logger.handlers:
-        return logger
-
-    logger.setLevel(level)
-
-    # Formatação
-    formatter = logging.Formatter(
-        "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-        datefmt="%Y-%m-%d %H:%M:%S",
-    )
-
-    # Handler para console
-    console_handler = logging.StreamHandler(sys.stdout)
-    console_handler.setFormatter(formatter)
-    logger.addHandler(console_handler)
-
-    # Handler para arquivo (opcional)
-    log_dir = "logs"
-    os.makedirs(log_dir, exist_ok=True)  # noqa: PTH103
-
-    file_handler = logging.FileHandler(os.path.join(log_dir, "rag_system.log"))  # noqa: PTH118
-    file_handler.setFormatter(formatter)
-    logger.addHandler(file_handler)
-
-    return logger
-
-
-# Logger global
-logger = setup_logger()
+# Exemplo opcional de mensagem inicial
+logger.info("✅ Logger inicializado com sucesso.")

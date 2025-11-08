@@ -1,0 +1,10 @@
+langchain
+langchain-openai
+langchain-community
+langchai-core
+langgraph
+chromadb
+python-dotenv
+PyPDF2
+pymupdf
+fitz

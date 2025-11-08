@@ -1,22 +1,28 @@
+#!/usr/bin/env python3
+"""
+Retrievers especializados OTIMIZADOS com RRF e correções críticas
+"""
+
+from typing import Any
+
 from chromadb import PersistentClient
+from langchain_community.retrievers import BM25Retriever
+from langchain_community.vectorstores import Chroma
+from langchain_core.documents import Document
 
-from utils.weighted_hybrid import WeightedHybridRetriever
 
-
-def create_specialized_retriever(domain: str) -> WeightedHybridRetriever:
+def create_specialized_retriever(domain: str, use_rrf: bool = True) -> Any:  # noqa: FBT001, FBT002
     """
-    Factory para criar retrievers especializados por domínio jurídico
+    Factory para criar retrievers especializados OTIMIZADOS
 
     Args:
         domain: Domínio jurídico ('constitutional_law', 'consumer_law', 'human_rights_law')
+        use_rrf: Se True, usa Reciprocal Rank Fusion (recomendado)
 
     Returns:
-        WeightedHybridRetriever configurado para o domínio específico
-
-    Raises:
-        ValueError: Se o domínio não for suportado ou a collection não existir
+        Retriever otimizado com RRF ou Weighted Hybrid
     """  # noqa: E501
-    # Mapeamento de domínios para collections do Chroma
+    # Mapeamento de domínios
     domain_to_collection = {
         "constitutional_law": "constitutional_docs",
         "consumer_law": "consumer_docs",
@@ -24,145 +30,142 @@ def create_specialized_retriever(domain: str) -> WeightedHybridRetriever:
     }
 
     if domain not in domain_to_collection:
-        msg = (
-            f"Domínio jurídico não suportado: {domain}. "
-            f"Domínios suportados: {list(domain_to_collection.keys())}"
-        )
+        msg = f"Domínio não suportado: {domain}. Suportados: {list(domain_to_collection.keys())}"  # noqa: E501
         raise ValueError(msg)
 
     collection_name = domain_to_collection[domain]
 
     try:
-        # Conecta ao ChromaDB persistente
+        # Conecta ao ChromaDB
         client = PersistentClient(path="chroma_db")
 
-        # Verifica se a collection existe
+        # Verifica se collection existe
         collections = client.list_collections()
         collection_names = [col.name for col in collections]
 
         if collection_name not in collection_names:
-            msg = (
-                f"Collection '{collection_name}' não encontrada no ChromaDB. "
-                f"Collections disponíveis: {collection_names}"
-            )
-            raise ValueError(  # noqa: TRY301
-                msg
-            )
+            msg = f"Collection '{collection_name}' não encontrada. Disponíveis: {collection_names}"  # noqa: E501
+            raise ValueError(msg)  # noqa: TRY301
 
-        # Obtém a collection
         collection = client.get_collection(collection_name)
 
-        # ✅ CORREÇÃO: Cria os retrievers necessários para o WeightedHybrid
-        bm25_retriever = create_bm25_retriever(collection)
-        vector_retriever = create_vector_retriever(collection)
+        print(f"✅ Criando retriever otimizado para: {domain}")
+        print(f"   📚 Collection: {collection_name} ({collection.count()} documentos)")
 
-        # Cria o retriever weighted hybrid especializado
-        retriever = WeightedHybridRetriever(
-            bm25_retriever=bm25_retriever,
-            vector_retriever=vector_retriever,
-            weight_bm25=0.4,  # Peso para BM25 (lexical)
-            weight_vector=0.6,  # Peso para vector (semântico)
-            top_k=5,  # Número de documentos a retornar
-        )
+        # ✅ CORREÇÃO CRÍTICA: BM25 com TODOS os documentos
+        bm25_retriever = create_bm25_retriever_full(collection)
 
-        print(f"✅ Retriever especializado criado para: {domain} -> {collection_name}")
+        # ✅ Vector retriever otimizado
+        vector_retriever = create_vector_retriever_optimized(collection)
+
+        if use_rrf:
+            # ✅ NOVO: Usa Reciprocal Rank Fusion
+            from ..utils.rrf_retriever import RRFRetriever  # noqa: PLC0415, TID252
+
+            retriever = RRFRetriever(
+                retrievers=[bm25_retriever, vector_retriever],
+                weights=[0.4, 0.6],  # BM25: 40%, Vector: 60%
+                k=60,  # Constante RRF
+                top_k=5,
+            )
+            print("   🎯 Modo: Reciprocal Rank Fusion (RRF)")
+        else:
+            # Fallback: Weighted Hybrid original
+            from ..utils.weighted_hybrid import (  # noqa: PLC0415, TID252
+                WeightedHybridRetriever,
+            )
+
+            retriever = WeightedHybridRetriever(
+                bm25_retriever=bm25_retriever,
+                vector_retriever=vector_retriever,
+                weight_bm25=0.4,
+                weight_vector=0.6,
+                top_k=5,
+            )
+            print("   ⚖️ Modo: Weighted Hybrid")
+
         return retriever  # noqa: TRY300
 
     except Exception as e:
-        print(f"❌ Erro ao criar retriever para {domain}: {e}")
+        print(f"❌ Erro ao criar retriever: {e}")
         raise
 
 
-def create_bm25_retriever(collection):  # noqa: ANN001, ANN201
+def create_bm25_retriever_full(collection: Any) -> BM25Retriever:
     """
-    Cria um retriever BM25 para busca lexical
-    """
-    from langchain_classic.schema import Document  # noqa: PLC0415
-    from langchain_community.retrievers import BM25Retriever  # noqa: PLC0415
+    ✅ CORREÇÃO CRÍTICA: BM25 com TODOS os documentos
 
+    ANTES: Usava apenas 100 documentos (peek limit=100)
+    AGORA: Indexa TODOS os documentos para IDF correto
+    """
     try:
-        # Extrai documentos da collection para o BM25
-        results = collection.peek(limit=100)
-        documents = []
+        # ✅ CORREÇÃO FINAL: Substitui a lógica quebrada e duplicada por uma única chamada limpa.
+        # O método .get() do ChromaDB, sem limit, busca todos os documentos da coleção.
+        all_docs_data = collection.get(include=["documents", "metadatas"])
+        all_documents = [
+            Document(page_content=text, metadata=meta)
+            for text, meta in zip(all_docs_data["documents"], all_docs_data["metadatas"])
+        ]
+        print(f"   📊 Indexando {len(all_documents)} documentos no BM25...")
 
-        if hasattr(results, "documents"):
-            for i, doc_text in enumerate(results.documents):
-                metadata = results.metadatas[i] if results.metadatas else {}
-                documents.append(Document(page_content=doc_text, metadata=metadata))
+        print(f"   ✅ BM25 indexado com {len(all_documents)} documentos")
 
-        if documents:
-            return BM25Retriever.from_documents(documents)
-        # Fallback: retriever vazio
-        return BM25Retriever.from_texts(["placeholder"])
+        if all_documents:
+            return BM25Retriever.from_documents(
+                all_documents,
+                k=10,
+            )
+
+        # Fallback
+        print("   ⚠️ Nenhum documento encontrado, usando placeholder")
+        return BM25Retriever.from_texts(["placeholder"], k=5)
 
     except Exception as e:  # noqa: BLE001
-        print(f"⚠️ Erro ao criar BM25 retriever: {e}")
-        return BM25Retriever.from_texts(["placeholder document"])
+        print(f"   ❌ Erro ao criar BM25: {e}")
+        return BM25Retriever.from_texts(["placeholder"], k=5)
 
 
-def create_vector_retriever(collection):  # noqa: ANN001, ANN201
+def create_vector_retriever_optimized(collection: Any) -> Any:
     """
-    Cria um retriever vetorial usando Chroma
+    ✅ Vector retriever otimizado com configurações melhores
     """
-    # ✅ CORREÇÃO: Usa Chroma diretamente sem OpenAIEmbeddings explícito
-    # Se você já tem embeddings no Chroma, podemos usar diretamente
     try:
-        from langchain_community.vectorstores import Chroma  # noqa: PLC0415
+        # ✅ OTIMIZAÇÃO: Usa o mesmo modelo de embedding local da ingestão.
+        # ✅ ATUALIZAÇÃO: Usa o novo pacote modular da LangChain.
+        from langchain_community.embeddings import HuggingFaceEmbeddings
 
-        # ✅ Abordagem simplificada: usa Chroma como vector store
-        # Assumindo que o Chroma já está configurado com embeddings
+        embeddings = HuggingFaceEmbeddings(
+            model_name="sentence-transformers/all-MiniLM-L6-v2",
+            model_kwargs={"device": "cpu"},
+        )
+
+        # Vector store com collection existente
         vector_store = Chroma(
-            collection_name=collection.name, persist_directory="chroma_db"
+            collection_name=collection.name,
+            embedding_function=embeddings,
+            persist_directory="chroma_db",
         )
 
+        # ✅ Configuração otimizada do retriever
         return vector_store.as_retriever(
-            search_type="similarity", search_kwargs={"k": 5}
+            search_type="similarity",
+            search_kwargs={
+                "k": 10,  # Retorna top 10 para RRF
+            },
         )
 
-    except Exception as e:  # noqa: BLE001
-        print(f"⚠️ Erro ao criar vector retriever: {e}")
-
-        # ✅ Fallback alternativo: cria um Chroma retriever básico
-        try:
-            from dotenv import load_dotenv  # noqa: PLC0415
-            from langchain_community.vectorstores import Chroma  # noqa: PLC0415
-            from langchain_openai import OpenAIEmbeddings  # noqa: PLC0415
-
-            load_dotenv()
-
-            # Se precisar criar embeddings do zero
-            embeddings = OpenAIEmbeddings(
-                model="text-embedding-3-small"
-                # API key é pega automaticamente do ambiente
-            )
-
-            vector_store = Chroma(
-                collection_name=collection.name,
-                embedding_function=embeddings,
-                persist_directory="chroma_db",
-            )
-
-            return vector_store.as_retriever(search_kwargs={"k": 5})
-
-        except Exception as e2:  # noqa: BLE001
-            print(f"❌ Erro no fallback do vector retriever: {e2}")
-            # Último fallback: retriever básico
-            from langchain_community.retrievers import (  # noqa: PLC0415
-                VectorStoreRetriever,
-            )
-
-            return VectorStoreRetriever(vectorstore=None)
+    except Exception as e:
+        print(f"   ❌ Erro ao criar vector retriever: {e}")
+        raise
 
 
-def get_available_domains() -> list:
+def get_available_domains() -> list[str]:
     """Retorna lista de domínios jurídicos disponíveis"""
     return ["constitutional_law", "consumer_law", "human_rights_law"]
 
 
-def check_chroma_connections() -> dict:
-    """
-    Verifica a conexão com todas as collections do Chroma
-    """
+def check_chroma_connections() -> dict[str, Any]:
+    """Verifica conexão com ChromaDB e retorna status"""
     try:
         client = PersistentClient(path="chroma_db")
         collections = client.list_collections()
@@ -187,3 +190,63 @@ def check_chroma_connections() -> dict:
             "collections": {},
             "total_collections": 0,
         }
+
+
+def benchmark_retriever(retriever: Any, test_queries: list[str]) -> dict[str, Any]:
+    """
+    ✨ NOVO: Benchmark de performance do retriever
+
+    Args:
+        retriever: Retriever a ser testado
+        test_queries: Lista de queries de teste
+
+    Returns:
+        Métricas de performance
+    """
+    import time  # noqa: PLC0415
+
+    results = {
+        "total_queries": len(test_queries),
+        "avg_latency": 0.0,
+        "avg_docs_returned": 0.0,
+        "queries_results": [],
+    }
+
+    latencies = []
+    docs_counts = []
+
+    for query in test_queries:
+        start = time.time()
+
+        try:
+            docs = retriever.invoke(query)
+            latency = time.time() - start
+
+            latencies.append(latency)
+            docs_counts.append(len(docs))
+
+            results["queries_results"].append(
+                {
+                    "query": query,
+                    "latency": latency,
+                    "docs_found": len(docs),
+                    "status": "success",
+                }
+            )
+
+        except Exception as e:  # noqa: BLE001
+            results["queries_results"].append(
+                {
+                    "query": query,
+                    "latency": 0,
+                    "docs_found": 0,
+                    "status": "error",
+                    "error": str(e),
+                }
+            )
+
+    if latencies:
+        results["avg_latency"] = sum(latencies) / len(latencies)
+        results["avg_docs_returned"] = sum(docs_counts) / len(docs_counts)
+
+    return results

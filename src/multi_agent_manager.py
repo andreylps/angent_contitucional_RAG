@@ -15,11 +15,13 @@ from langchain_openai import ChatOpenAI
 load_dotenv()
 
 # ✅ CORREÇÃO: Imports relativos sem "src."
-from agents.constitutional_agent import ConstitutionalAgent  # noqa: E402
-from agents.consumer_agent import ConsumerAgent  # noqa: E402
-from agents.human_rights_agent import HumanRightsAgent  # noqa: E402
-from agents.router_agent import LegalRouterAgent  # noqa: E402
-from pipelines.specialized_retrievers import create_specialized_retriever  # noqa: E402
+from .agents.constitutional_agent import ConstitutionalAgent  # noqa: E402
+from .agents.consumer_agent import ConsumerAgent  # noqa: E402
+from .agents.human_rights_agent import HumanRightsAgent  # noqa: E402
+from .agents.router_agent import LegalRouterAgent  # noqa: E402
+from .pipelines.specialized_retrievers import (  # noqa: E402
+    create_specialized_retriever,
+)
 
 
 class MultiAgentManager:
@@ -60,21 +62,25 @@ class MultiAgentManager:
                 "constitutional_law"
             )
             agents["constitutional_law"] = ConstitutionalAgent(
-                retriever=constitutional_retriever, llm=self.llm
+                domain="constitutional_law",
+                retriever=constitutional_retriever,
+                llm=self.llm,
             )
             print("   ✅ ConstitutionalAgent carregado")
 
             # Agente Consumer
             consumer_retriever = create_specialized_retriever("consumer_law")
             agents["consumer_law"] = ConsumerAgent(
-                retriever=consumer_retriever, llm=self.llm
+                domain="consumer_law", retriever=consumer_retriever, llm=self.llm
             )
             print("   ✅ ConsumerAgent carregado")
 
             # Agente Human Rights
             human_rights_retriever = create_specialized_retriever("human_rights_law")
             agents["human_rights_law"] = HumanRightsAgent(
-                retriever=human_rights_retriever, llm=self.llm
+                domain="human_rights_law",
+                retriever=human_rights_retriever,
+                llm=self.llm,
             )
             print("   ✅ HumanRightsAgent carregado")
 
@@ -104,6 +110,24 @@ class MultiAgentManager:
             routing_decision = self.router.get_routing_decision(query)
             print(f"   🎯 Roteamento: {routing_decision['selected_agents']}")
             print(f"   📊 Scores: {routing_decision['domain_scores']}")
+
+            # ✅ AJUSTE: Tratamento cordial para perguntas fora de contexto
+            # Se o roteador identificar que a pergunta está fora do escopo,
+            # retorna uma resposta amigável e encerra o processamento.
+            if routing_decision["selected_agents"] == ["out_of_context"]:
+                print("   ⚠️ Pergunta fora de contexto detectada.")
+                friendly_response = (
+                    "Olá! Eu sou um assistente jurídico especializado em legislação brasileira, "
+                    "com foco na Constituição, Direito do Consumidor e Direitos Humanos.\n\n"
+                    "Sua pergunta parece estar fora da minha área de conhecimento. "
+                    "Poderia, por favor, fazer uma pergunta dentro desses domínios?"
+                )
+                return {
+                    "query": query,
+                    "final_answer": friendly_response,
+                    "routing_decision": routing_decision,
+                    "status": "out_of_context",
+                }
 
             # 2. Executa os agentes selecionados
             agent_responses = await self._execute_agents(
@@ -163,11 +187,13 @@ class MultiAgentManager:
     ) -> dict[str, Any]:
         """Executa um agente com tratamento de erro"""
         try:
-            return agent.invoke(query, history)
+            return agent.invoke(
+                query
+            )  # ✅ CORREÇÃO: Remove a passagem do histórico, que não é usado pelo agente.
         except Exception as e:  # noqa: BLE001
             return {
                 "agent": agent.name,
-                "domain": agent.get_domain(),
+                "agent_domain": agent.domain,  # ✅ CORREÇÃO: Usa o atributo correto do objeto agente.
                 "answer": f"Erro no agente: {e!s}",
                 "sources": [],
                 "confidence": 0.0,
@@ -185,7 +211,6 @@ class MultiAgentManager:
         if not agent_responses:
             return self._create_no_answer_response(query)
 
-        # Se apenas um agente respondeu, usa sua resposta diretamente
         if len(agent_responses) == 1:
             primary_response = agent_responses[0]
             return {
@@ -193,25 +218,25 @@ class MultiAgentManager:
                 "final_answer": primary_response["answer"],
                 "sources": primary_response["sources"],
                 "primary_agent": primary_response["agent"],
-                "agent_domain": primary_response["domain"],
+                "agent_domain": primary_response["agent_domain"],
                 "confidence": primary_response["confidence"],
                 "routing_decision": routing_decision,
                 "all_responses": agent_responses,
                 "status": "success",
             }
 
-        # Se múltiplos agentes responderam, combina as respostas
+        # Lógica para múltiplos agentes
         combined_answer = self._merge_multiple_answers(agent_responses)
-        all_sources: list[Any] = []
-        for response in agent_responses:
-            all_sources.extend(response.get("sources", []))
+        all_sources = [
+            source for resp in agent_responses for source in resp.get("sources", [])
+        ]
 
         return {
             "query": query,
             "final_answer": combined_answer,
             "sources": all_sources,
             "primary_agent": routing_decision["primary_agent"],
-            "agent_domains": [resp["domain"] for resp in agent_responses],
+            "agent_domains": [resp["agent_domain"] for resp in agent_responses],
             "confidence": max(resp["confidence"] for resp in agent_responses),
             "routing_decision": routing_decision,
             "all_responses": agent_responses,
