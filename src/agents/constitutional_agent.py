@@ -20,6 +20,26 @@ Forneça as perguntas alternativas separadas por quebras de linha. Não numere a
 Pergunta Original: {question}""",
 )
 
+# ✅ v0.5: Template para responder com base em busca na web
+WEB_ANSWER_PROMPT = PromptTemplate(
+    input_variables=["context", "question"],
+    template="""Você é um assistente especialista em Direito Constitucional brasileiro. Você não encontrou informações suficientes em sua base de dados interna e realizou uma busca na web em fontes confiáveis. Sua tarefa é responder à pergunta do usuário com base nos trechos de páginas da web fornecidos no contexto.
+
+**Instruções OBRIGATÓRIAS:**
+1.  **Baseie-se nos Fatos:** Responda APENAS com base no contexto fornecido (trechos da web). Não use conhecimento prévio.
+2.  **Cite a Fonte:** Ao final de cada informação relevante, cite a URL da fonte usando o formato `(Fonte: [URL])`.
+3.  **Adicione um Aviso:** Ao final da sua resposta, inclua o seguinte aviso, exatamente como está escrito:
+    "---
+    **Aviso:** Esta resposta foi gerada com base em informações de fontes externas da web e não da base de conhecimento jurídica interna. Recomenda-se a validação das informações na fonte original."
+
+Contexto da Web:
+{context}
+
+Pergunta: {question}
+
+Resposta:""",
+)
+
 
 class ConstitutionalAgent:
     """Agente especializado em Direito Constitucional com busca Multi-Query."""
@@ -153,7 +173,7 @@ Resposta:""",
                 "status": "no_documents",
             }
 
-        # 4. Formatar o contexto e gerar a resposta final
+        # Formatar o contexto e gerar a resposta final
         context = "\n\n---\n\n".join([doc.page_content for doc in final_documents])
 
         final_chain = self.final_answer_prompt | self.llm | StrOutputParser()

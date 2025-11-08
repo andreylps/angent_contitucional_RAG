@@ -71,10 +71,10 @@ Agora que a base está sólida, podemos focar em melhorias incrementais para aum
 
 ### FASE 3: INTERFACE E DEPLOY (v1.0)
 
-5.  **Fallback com Busca na Web (v0.5): - A IMPLANTAR**
+5.  **✅ Fallback com Busca na Web (v0.5 - CONCLUÍDO):**
 
-    - **Proposta:** Quando um agente não encontrar informações suficientes em sua base de documentos, ele deverá acionar uma ferramenta de busca na web como fallback. A busca será restrita a um conjunto de sites confiáveis (portais do governo, tribunais superiores, órgãos internacionais como OEA e ONU).
-    - **Benefício Esperado:** Aumenta drasticamente a capacidade do sistema de responder a uma gama maior de perguntas, mantendo um alto padrão de confiabilidade das fontes e alertando o usuário para validar informações externas.
+    - **Implementação:** Quando o roteador classifica uma pergunta como `out_of_context`, o `MultiAgentManager` agora aciona uma `WebSearchTool` que busca informações em uma lista pré-definida de sites confiáveis (gov.br, stf.jus.br, etc.). A resposta gerada cita as fontes e inclui um aviso de validação.
+    - **Benefício Alcançado:** O sistema agora pode responder a uma gama muito maior de perguntas, mesmo fora de seus domínios de especialidade, agindo como um pesquisador responsável.
 
 6.  **Criação de uma API (v0.6): - A IMPLANTAR**
 

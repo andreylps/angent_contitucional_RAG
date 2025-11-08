@@ -28,6 +28,9 @@ from .pipelines.specialized_retrievers import (  # noqa: E402
     create_specialized_retriever,
 )
 from .utils.interaction_logger import log_interaction  # ✅ v0.4: Importa o logger
+from .utils.web_search_tool import (
+    WebSearchTool,  # ✅ v0.5: Importa a ferramenta de busca
+)
 
 # ✅ v0.3.1: Template para re-escrever a pergunta com base no histórico (movido para o Manager)
 REWRITE_QUERY_PROMPT = PromptTemplate(
@@ -40,6 +43,26 @@ Histórico da Conversa:
 Pergunta de Acompanhamento: {question}
 
 Pergunta Independente:""",
+)
+
+# ✅ v0.5: Template para responder com base em busca na web (movido para o Manager)
+WEB_ANSWER_PROMPT = PromptTemplate(
+    input_variables=["context", "question"],
+    template="""Você é um assistente de IA. Sua tarefa é responder à pergunta do usuário com base nos trechos de páginas da web fornecidos no contexto.
+
+**Instruções OBRIGATÓRIAS:**
+1.  **Baseie-se nos Fatos:** Responda APENAS com base no contexto fornecido (trechos da web). Não use conhecimento prévio.
+2.  **Cite a Fonte:** Ao final de cada informação relevante, cite a URL da fonte usando o formato `(Fonte: [URL])`.
+3.  **Adicione um Aviso:** Ao final da sua resposta, inclua o seguinte aviso, exatamente como está escrito:
+    "---
+    **Aviso:** Esta resposta foi gerada com base em informações de fontes externas da web e não da base de conhecimento jurídica interna. Recomenda-se a validação das informações na fonte original."
+
+Contexto da Web:
+{context}
+
+Pergunta: {question}
+
+Resposta:""",
 )
 
 
@@ -65,6 +88,10 @@ class MultiAgentManager:
 
         # ✅ v0.3: Adiciona um estado para armazenar o histórico da conversa
         self.conversation_history: list[dict[str, Any]] = []
+
+        # ✅ v0.5: Inicializa a ferramenta de busca na web e o prompt de resposta
+        self.web_search_tool = WebSearchTool()
+        self.web_answer_prompt = WEB_ANSWER_PROMPT
 
         print("✅ MultiAgentManager inicializado com sucesso!")
         print("   - Router Agent: Pronto")
@@ -173,19 +200,12 @@ class MultiAgentManager:
             # Se o roteador identificar que a pergunta está fora do escopo,
             # retorna uma resposta amigável e encerra o processamento.
             if routing_decision["selected_agents"] == ["out_of_context"]:
-                print("   ⚠️ Pergunta fora de contexto detectada.")
-                friendly_response = (
-                    "Olá! Eu sou um assistente jurídico especializado em legislação brasileira, "
-                    "com foco na Constituição, Direito do Consumidor e Direitos Humanos.\n\n"
-                    "Sua pergunta parece estar fora da minha área de conhecimento. "
-                    "Poderia, por favor, fazer uma pergunta dentro desses domínios?"
+                print(
+                    "   ⚠️ Pergunta fora de contexto detectada. Acionando busca na web..."
                 )
-                return {
-                    "query": query,
-                    "final_answer": friendly_response,
-                    "routing_decision": routing_decision,
-                    "status": "out_of_context",
-                }
+                final_response = await self._handle_web_search(standalone_query, query)
+                log_data.update(final_response)
+                return final_response
 
             # 3. Executa os agentes selecionados
             agent_responses = await self._execute_agents(
@@ -283,6 +303,42 @@ class MultiAgentManager:
                 "confidence": 0.0,
                 "status": "error",
             }
+
+    async def _handle_web_search(
+        self, standalone_query: str, original_query: str
+    ) -> dict[str, Any]:
+        """Lida com a lógica de fallback de busca na web."""
+        web_results = self.web_search_tool.search(standalone_query)
+
+        if not web_results:
+            return {
+                "query": original_query,
+                "final_answer": "Não foram encontrados documentos relevantes para responder a esta pergunta, nem na base interna nem na web.",
+                "sources": [],
+                "primary_agent": "web_search_fallback",
+                "confidence": 0.1,
+                "status": "no_documents",
+            }
+
+        web_context = "\n\n---\n\n".join(
+            [f"Fonte: {res['url']}\nConteúdo: {res['content']}" for res in web_results]
+        )
+        web_chain = self.web_answer_prompt | self.llm | StrOutputParser()
+        answer = await web_chain.ainvoke(
+            {"context": web_context, "question": original_query}
+        )
+        sources = [res["url"] for res in web_results]
+
+        return {
+            "query": original_query,
+            "final_answer": answer,
+            "sources": sources,
+            "primary_agent": "web_search_fallback",
+            "agent_domain": "general",
+            "confidence": 0.60,
+            "all_responses": [],
+            "status": "success_web_fallback",
+        }
 
     def _combine_responses(
         self,
