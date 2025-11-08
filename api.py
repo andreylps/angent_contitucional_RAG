@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from src.multi_agent_manager import MultiAgentManager
@@ -32,6 +33,22 @@ app = FastAPI(
     description="API para interagir com o sistema de assistente jurídico multiagente.",
     version="0.6.0",
 )
+
+# ✅ v0.7: Configuração do CORS
+# Define de quais origens (domínios) a API aceitará requisições.
+origins = [
+    "http://localhost:3000",  # Endereço padrão do frontend Next.js em desenvolvimento
+    "http://localhost",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],  # Permite todos os métodos (GET, POST, etc.)
+    allow_headers=["*"],  # Permite todos os cabeçalhos
+)
+
 
 # ✅ Singleton: Instancia o MultiAgentManager uma única vez quando a API inicia.
 # Isso evita recarregar todos os modelos a cada requisição, o que é crucial para a performance.

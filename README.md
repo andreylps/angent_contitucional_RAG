@@ -81,9 +81,10 @@ Agora que a base está sólida, podemos focar em melhorias incrementais para aum
     - **Implementação:** A lógica do `MultiAgentManager` foi exposta através de uma API REST usando **FastAPI**. A API inclui validação de dados com Pydantic e documentação automática interativa via Swagger UI.
     - **Benefício Alcançado:** O sistema agora é um serviço desacoplado, robusto e pronto para ser consumido por diferentes interfaces (front-end, chatbots, etc.).
 
-7.  **Interface Web para Demonstração (v0.7): - A IMPLANTAR**
+7.  **✅ Interface Web com Next.js (v0.7 - CONCLUÍDO):**
 
-    - **Proposta:** Construir uma interface de chat básica usando **Streamlit** ou **Gradio**. É rápido de implementar e perfeito para demonstrações e testes internos.
+    - **Implementação:** Uma interface de chat moderna e reativa foi desenvolvida usando **Next.js** e **Tailwind CSS**. A aplicação frontend, localizada na pasta `/frontend`, consome a API FastAPI para proporcionar uma experiência de usuário fluida.
+    - **Benefício Alcançado:** O projeto agora possui uma interface de usuário completa e profissional, demonstrando uma arquitetura de aplicação web moderna com frontend e backend desacoplados.
 
 8.  **Conteinerização e Deploy (v0.8): - A IMPLANTAR**
     - **Proposta:** Empacotar a aplicação em um contêiner **Docker** para facilitar o deploy em qualquer ambiente de nuvem (AWS, GCP, Azure) ou servidor local.
