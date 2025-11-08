@@ -5,6 +5,9 @@ Gerenciador principal do sistema multiagente RAG jurídico
 
 import asyncio
 import os
+import time
+import uuid
+from datetime import UTC, datetime
 from typing import Any
 
 from dotenv import load_dotenv
@@ -24,6 +27,7 @@ from .agents.router_agent import LegalRouterAgent  # noqa: E402
 from .pipelines.specialized_retrievers import (  # noqa: E402
     create_specialized_retriever,
 )
+from .utils.interaction_logger import log_interaction  # ✅ v0.4: Importa o logger
 
 # ✅ v0.3.1: Template para re-escrever a pergunta com base no histórico (movido para o Manager)
 REWRITE_QUERY_PROMPT = PromptTemplate(
@@ -144,6 +148,15 @@ class MultiAgentManager:
         Returns:
             Dict com resposta completa e metadados
         """
+        # ✅ v0.4: Inicia o logging da interação
+        interaction_id = str(uuid.uuid4())
+        start_time = time.time()
+        log_data: dict[str, Any] = {
+            "interaction_id": interaction_id,
+            "timestamp_utc": datetime.now(UTC).isoformat(),
+            "original_query": query,
+        }
+
         print(f"🔍 Processando consulta: '{query}'")
 
         try:
@@ -151,6 +164,7 @@ class MultiAgentManager:
             standalone_query = await self._rewrite_query_with_history(query)
 
             # 2. Roteamento - decide quais agentes usar com base na pergunta completa
+            log_data["standalone_query"] = standalone_query
             routing_decision = self.router.get_routing_decision(standalone_query)
             print(f"   🎯 Roteamento: {routing_decision['selected_agents']}")
             print(f"   📊 Scores: {routing_decision['domain_scores']}")
@@ -192,11 +206,19 @@ class MultiAgentManager:
             print(
                 f"   ✅ Consulta processada - {len(agent_responses)} agente(s) responderam"  # noqa: E501
             )
+            log_data.update(final_response)
             return final_response  # noqa: TRY300
 
         except Exception as e:  # noqa: BLE001
             print(f"❌ Erro no processamento: {e}")
-            return self._create_error_response(query, str(e))
+            error_response = self._create_error_response(query, str(e))
+            log_data.update(error_response)
+            return error_response
+        finally:
+            # ✅ v0.4: Finaliza e registra o log da interação
+            end_time = time.time()
+            log_data["duration_seconds"] = round(end_time - start_time, 2)
+            log_interaction(log_data)
 
     def clear_history(self) -> None:
         """Limpa o histórico da conversa."""

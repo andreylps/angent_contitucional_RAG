@@ -30,7 +30,9 @@ class ConstitutionalAgent:
         self.retriever = retriever
         self.llm = llm
         self.final_answer_prompt = self._create_final_answer_prompt()
-        self.reranker = CrossEncoderReRanker()
+        self.reranker = (
+            CrossEncoderReRanker()
+        )  # ✅ v0.2 FINAL: Inicializa na construção.
 
     def _create_final_answer_prompt(self) -> PromptTemplate:
         """Cria o prompt final para gerar a resposta com base no contexto."""

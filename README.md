@@ -65,9 +65,9 @@ Agora que a base está sólida, podemos focar em melhorias incrementais para aum
     - **Implementação:** O `MultiAgentManager` agora gerencia o histórico da conversa. Ele utiliza o LLM para re-escrever perguntas de acompanhamento, transformando-as em perguntas autônomas antes de enviá-las ao roteador. Os agentes foram atualizados para usar o histórico para fornecer respostas mais contextuais.
     - **Benefício Alcançado:** O sistema agora é um assistente conversacional, capaz de entender e responder a perguntas de acompanhamento de forma natural e precisa.
 
-4.  **Logging e Monitoramento Avançado (v0.4):**
-    - **Proposta:** Registrar todas as interações (pergunta, decisão do roteador, resposta, confiança, fontes) em um formato estruturado (JSON ou banco de dados). Criar um dashboard simples (ex: com Streamlit ou Dash) para visualizar essas interações.
-    - **Benefício:** Facilita a identificação de pontos fracos, perguntas mal respondidas e oportunidades de melhoria contínua.
+4.  **✅ Logging e Monitoramento Avançado (v0.4 - CONCLUÍDO):**
+    - **Implementação:** O `MultiAgentManager` agora registra cada interação em um arquivo de log estruturado (`interactions.jsonl`). Um dashboard criado com **Streamlit** (`dashboard.py`) lê esses logs e exibe métricas e uma tabela de interações recentes.
+    - **Benefício Alcançado:** O sistema agora é totalmente observável, permitindo a análise de performance, a identificação de falhas e a coleta de dados para melhorias futuras.
 
 ### FASE 3: INTERFACE E DEPLOY (v1.0)
 
