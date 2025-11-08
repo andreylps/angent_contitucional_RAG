@@ -3,3 +3,1895 @@
 2025-11-05 07:44:59,859 [INFO] - ✅ Logger inicializado com sucesso.
 2025-11-05 07:44:59,886 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
 2025-11-05 07:45:13,120 [INFO] - Sistema inicializado com sucesso!
+2025-11-06 21:44:21,360 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-06 21:44:21,387 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-06 21:44:27,455 [INFO] - Sistema inicializado com sucesso!
+2025-11-06 21:46:31,428 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-06 21:46:37,989 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-06 21:49:11,862 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-06 21:49:13,719 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-06 21:49:40,238 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-06 21:49:48,610 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-06 21:49:50,037 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-06 21:49:58,131 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-06 21:56:29,338 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-06 21:56:29,367 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-06 21:56:33,498 [INFO] - Sistema inicializado com sucesso!
+2025-11-06 22:08:49,428 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-06 22:08:49,429 [INFO] - 🚀 Iniciando o modo de teste interativo do Roteador Jurídico...
+2025-11-06 22:09:15,303 [ERROR] - 💥 Ocorreu um erro durante o teste: 'LegalRouterAgent' object has no attribute 'route'
+2025-11-06 22:09:15,303 [INFO] - 👋 Encerrando o sistema de teste.
+2025-11-06 22:10:32,480 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-06 22:10:32,481 [INFO] - 🚀 Iniciando o modo de teste interativo do Roteador Jurídico...
+2025-11-06 22:10:53,695 [INFO] - 🎯 Decisão do Roteador: {'selected_agents': ['out_of_context'], 'domain_scores': {'constitutional_law': 0, 'consumer_law': 0, 'human_rights_law': 0}, 'primary_agent': 'out_of_context', 'query': 'Qual e a capital da Franca?'}
+2025-11-06 22:11:23,339 [INFO] - 👋 Encerrando o sistema de teste.
+2025-11-06 22:28:49,763 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-06 22:28:50,252 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-06 22:28:50,473 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-06 22:28:51,646 [ERROR] - Erro na inicialização: ConstitutionalAgent.__init__() missing 1 required positional argument: 'retriever'
+2025-11-06 22:29:13,631 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-06 22:29:14,034 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-06 22:29:14,226 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-06 22:29:15,368 [ERROR] - Erro na inicialização: ConstitutionalAgent.__init__() missing 1 required positional argument: 'retriever'
+2025-11-06 22:33:59,610 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-06 22:33:59,637 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-06 22:33:59,925 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-06 22:34:04,142 [INFO] - ✅ Agentes e LLMs inicializados.
+2025-11-06 22:34:04,142 [INFO] - Sistema inicializado com sucesso!
+2025-11-06 22:36:40,468 [INFO] - 🎯 Decisão do Roteador: ['out_of_context']
+2025-11-06 22:40:13,630 [INFO] - 🎯 Decisão do Roteador: ['constitutional_law', 'human_rights_law']
+2025-11-06 22:40:15,097 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-06 22:40:23,018 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-06 22:40:24,013 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-06 22:40:36,460 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-06 22:40:36,466 [ERROR] - Erro no processamento: unhashable type: 'dict'
+2025-11-06 23:19:01,300 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-06 23:19:01,346 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-06 23:19:01,791 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-06 23:19:07,123 [INFO] - ✅ Agentes e LLMs inicializados.
+2025-11-06 23:19:07,123 [INFO] - Sistema inicializado com sucesso!
+2025-11-06 23:20:35,923 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-06 23:20:35,951 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-06 23:20:36,151 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-06 23:20:40,499 [INFO] - ✅ Agentes e LLMs inicializados.
+2025-11-06 23:20:40,499 [INFO] - Sistema inicializado com sucesso!
+2025-11-06 23:21:16,576 [INFO] - 🎯 Decisão do Roteador: ['out_of_context']
+2025-11-06 23:22:02,641 [INFO] - 🎯 Decisão do Roteador: ['consumer_law']
+2025-11-06 23:22:03,716 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-06 23:22:10,277 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-06 23:22:10,315 [ERROR] - Erro no processamento: unhashable type: 'dict'
+2025-11-06 23:34:30,729 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-06 23:34:30,757 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-06 23:34:31,035 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-06 23:34:34,140 [INFO] - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-06 23:34:38,504 [INFO] - ✅ Agentes e LLMs inicializados.
+2025-11-06 23:34:38,504 [INFO] - Sistema inicializado com sucesso!
+2025-11-06 23:35:06,958 [INFO] - 🎯 Decisão do Roteador: ['out_of_context']
+2025-11-06 23:35:26,217 [INFO] - 🎯 Decisão do Roteador: ['consumer_law']
+2025-11-06 23:35:35,442 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-06 23:35:35,449 [ERROR] - Erro no processamento: unhashable type: 'dict'
+2025-11-06 23:36:21,046 [INFO] - 🎯 Decisão do Roteador: ['out_of_context']
+2025-11-06 23:36:39,360 [INFO] - 🎯 Decisão do Roteador: ['out_of_context']
+2025-11-06 23:36:43,461 [INFO] - 🎯 Decisão do Roteador: ['out_of_context']
+2025-11-07 07:56:06,863 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 07:56:06,904 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 07:56:07,333 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-07 07:56:14,263 [INFO] - ✅ Agentes e LLMs inicializados.
+2025-11-07 07:56:14,263 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 08:14:29,410 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 08:14:29,411 [INFO] - 🚀 Iniciando o modo de teste interativo do Roteador Jurídico...
+2025-11-07 08:15:26,305 [INFO] - 🎯 Decisão do Roteador: {'selected_agents': ['constitutional_law'], 'domain_scores': {'constitutional_law': 2, 'consumer_law': 0, 'human_rights_law': 0}, 'primary_agent': 'constitutional_law', 'query': 'Quais são os direitos fundamentais na Constituição Federal?'}
+2025-11-07 08:16:17,996 [INFO] - 🎯 Decisão do Roteador: {'selected_agents': ['constitutional_law'], 'domain_scores': {'constitutional_law': 2, 'consumer_law': 0, 'human_rights_law': 0}, 'primary_agent': 'constitutional_law', 'query': 'O que o Artigo 5º da CF/88 garante?'}
+2025-11-07 08:16:29,933 [INFO] - 🎯 Decisão do Roteador: {'selected_agents': ['out_of_context'], 'domain_scores': {'constitutional_law': 0, 'consumer_law': 0, 'human_rights_law': 0}, 'primary_agent': 'out_of_context', 'query': 'Posso me arrepender de uma compra online?'}
+2025-11-07 08:22:32,810 [INFO] - 👋 Encerrando o sistema de teste.
+2025-11-07 08:22:45,929 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 08:22:45,939 [INFO] - 🚀 Iniciando o modo de teste interativo do Roteador Jurídico...
+2025-11-07 08:23:11,266 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 08:23:11,386 [INFO] - 🎯 Decisão do Roteador: {'selected_agents': ['consumer_law'], 'domain_scores': {}, 'primary_agent': 'consumer_law', 'query': 'Posso me arrepender de uma compra online?'}
+2025-11-07 08:23:43,396 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 08:23:43,401 [INFO] - 🎯 Decisão do Roteador: {'selected_agents': ['consumer_law'], 'domain_scores': {}, 'primary_agent': 'consumer_law', 'query': 'Qual o prazo para troca de um produto com defeito?'}
+2025-11-07 08:23:57,874 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 08:23:57,878 [INFO] - 🎯 Decisão do Roteador: {'selected_agents': ['constitutional_law'], 'domain_scores': {}, 'primary_agent': 'constitutional_law', 'query': 'Quais são os direitos fundamentais na Constituição Federal?'}
+2025-11-07 08:24:09,894 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 08:24:09,895 [INFO] - 🎯 Decisão do Roteador: {'selected_agents': ['constitutional_law'], 'domain_scores': {}, 'primary_agent': 'constitutional_law', 'query': 'O que o Artigo 5º da CF/88 garante?'}
+2025-11-07 08:24:29,658 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 08:24:29,671 [INFO] - 🎯 Decisão do Roteador: {'selected_agents': ['human_rights_law'], 'domain_scores': {}, 'primary_agent': 'human_rights_law', 'query': 'Como a Convenção Americana protege a liberdade de expressão?'}
+2025-11-07 08:24:47,777 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 08:24:47,790 [INFO] - 🎯 Decisão do Roteador: {'selected_agents': ['human_rights_law'], 'domain_scores': {}, 'primary_agent': 'human_rights_law', 'query': 'Quais os direitos garantidos pela CADH?'}
+2025-11-07 08:25:02,300 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 08:25:02,306 [INFO] - 🎯 Decisão do Roteador: {'selected_agents': ['constitutional_law', 'human_rights_law'], 'domain_scores': {}, 'primary_agent': 'constitutional_law', 'query': 'Qual a proteção constitucional para os direitos humanos no Brasil?'}
+2025-11-07 08:25:18,571 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 08:25:18,579 [INFO] - 🎯 Decisão do Roteador: {'selected_agents': ['out_of_context'], 'domain_scores': {}, 'primary_agent': 'out_of_context', 'query': 'Qual a capital da França?'}
+2025-11-07 08:26:31,735 [INFO] - 👋 Encerrando o sistema de teste.
+2025-11-07 08:28:05,476 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 08:28:05,938 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 08:28:06,142 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-07 08:28:11,704 [INFO] - ✅ Agentes e LLMs inicializados.
+2025-11-07 08:28:11,704 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 08:29:09,672 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 08:29:09,681 [INFO] - 🎯 Decisão do Roteador: ['consumer_law']
+2025-11-07 08:29:34,216 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 08:29:36,036 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 08:29:37,326 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 08:29:37,425 [ERROR] - Erro no processamento: unhashable type: 'dict'
+2025-11-07 08:54:13,419 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 08:54:13,885 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 08:54:14,139 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-07 08:54:19,626 [INFO] - ✅ Agentes e LLMs inicializados.
+2025-11-07 08:54:19,626 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 09:17:34,652 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 09:17:34,660 [INFO] - 🎯 Decisão do Roteador: ['constitutional_law']
+2025-11-07 09:17:35,368 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 09:17:36,847 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 09:17:37,852 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 09:17:46,594 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 09:17:46,595 [ERROR] - Erro no processamento: unhashable type: 'dict'
+2025-11-07 09:33:15,590 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 09:33:16,025 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 09:33:16,286 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-07 09:33:21,780 [INFO] - ✅ Agentes e LLMs inicializados.
+2025-11-07 09:33:21,780 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 09:35:04,493 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 09:35:04,499 [INFO] - 🎯 Decisão do Roteador: ['human_rights_law']
+2025-11-07 09:35:05,843 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 09:35:06,960 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 09:35:08,204 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 09:35:08,206 [ERROR] - Erro no processamento: unhashable type: 'dict'
+2025-11-07 09:51:38,231 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 09:51:38,676 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 09:51:38,920 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-07 09:51:44,453 [INFO] - ✅ Agentes e LLMs inicializados.
+2025-11-07 09:51:44,453 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 09:52:32,105 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 09:52:32,114 [INFO] - 🎯 Decisão do Roteador: ['consumer_law']
+2025-11-07 09:52:32,922 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 09:52:33,491 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 09:52:34,341 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 09:52:34,343 [ERROR] - Erro no processamento: unhashable type: 'dict'
+2025-11-07 10:05:39,094 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 10:05:39,526 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 10:05:39,807 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-07 10:05:45,483 [INFO] - ✅ Agentes e LLMs inicializados.
+2025-11-07 10:05:45,483 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 10:22:39,800 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 10:22:39,814 [INFO] - 🎯 Decisão do Roteador: ['constitutional_law', 'consumer_law']
+2025-11-07 10:22:41,060 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 10:22:41,603 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 10:22:42,156 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 10:22:46,325 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 10:22:47,515 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 10:22:48,010 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 10:22:48,898 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 10:22:48,901 [ERROR] - Erro no processamento: unhashable type: 'dict'
+2025-11-07 10:40:18,817 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 10:40:19,254 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 10:40:19,509 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-07 10:40:25,050 [INFO] - ✅ Agentes e LLMs inicializados.
+2025-11-07 10:40:25,050 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 10:40:44,217 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 10:40:44,222 [INFO] - 🎯 Decisão do Roteador: ['consumer_law']
+2025-11-07 10:40:46,367 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 10:40:47,701 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 10:40:48,469 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 10:40:48,617 [ERROR] - Erro no processamento: unhashable type: 'dict'
+2025-11-07 11:06:22,049 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 11:06:22,483 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 11:06:22,763 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-07 11:06:28,487 [INFO] - ✅ Agentes e LLMs inicializados.
+2025-11-07 11:06:28,488 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 11:32:19,429 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 11:32:19,439 [INFO] - 🎯 Decisão do Roteador: ['human_rights_law']
+2025-11-07 11:32:20,316 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 11:32:21,532 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 11:32:22,475 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 11:32:32,697 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 11:32:32,700 [ERROR] - Erro no processamento: unhashable type: 'dict'
+2025-11-07 11:55:31,035 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 11:55:31,036 [INFO] - 📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-07 11:55:31,036 [INFO] - ==================================================
+2025-11-07 11:55:31,036 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-07 11:55:31,036 [INFO] - 🔍 Procurando por: data
+2025-11-07 11:55:32,690 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 11:55:33,206 [INFO] - 
+📁 Processando: constitution -&gt; constitutional_law
+2025-11-07 11:55:33,206 [INFO] -    📄 Processando: CONSTITUICAO.md
+2025-11-07 11:55:53,075 [INFO] -    ✅ Sucesso: 617 chunks criados
+2025-11-07 11:55:53,075 [INFO] - 
+📁 Processando: direitos_humanos-oea -&gt; human_rights_law
+2025-11-07 11:55:53,075 [INFO] -    📄 Processando: Convencao Americana sobre Direitos Humanos - OEA.pdf
+2025-11-07 11:57:59,802 [INFO] -    ✅ Sucesso: 4557 chunks criados
+2025-11-07 11:57:59,803 [INFO] - 
+📁 Processando: economia -&gt; consumer_law
+2025-11-07 11:57:59,803 [INFO] -    📄 Processando: codigo_defesa_consumidor.pdf
+2025-11-07 12:01:22,565 [INFO] -    ✅ Sucesso: 7094 chunks criados
+2025-11-07 12:01:22,565 [INFO] -    📄 Processando: lei_responsabilidade_fiscal.pdf
+2025-11-07 12:05:26,947 [INFO] -    ✅ Sucesso: 8233 chunks criados
+2025-11-07 12:05:26,947 [INFO] - 
+🎉 PROCESSAMENTO CONCLUÍDO!
+2025-11-07 12:05:26,947 [INFO] -    📊 Total de chunks criados: 20501
+2025-11-07 12:05:27,028 [INFO] -    📚 Collections no Chroma:
+2025-11-07 12:05:27,028 [INFO] -       - consumer_docs: 15290 documentos
+2025-11-07 12:05:27,028 [INFO] -       - human_rights_docs: 4557 documentos
+2025-11-07 12:05:27,028 [INFO] -       - constitutional_docs: 617 documentos
+2025-11-07 12:11:40,147 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 12:11:40,581 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 12:11:40,849 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-07 12:11:46,359 [INFO] - ✅ Agentes e LLMs inicializados.
+2025-11-07 12:11:46,359 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 12:12:05,021 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 12:12:05,029 [INFO] - 🎯 Decisão do Roteador: ['constitutional_law']
+2025-11-07 12:12:05,729 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 12:12:06,077 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 12:12:07,182 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 12:12:16,814 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 12:12:16,836 [ERROR] - Erro no processamento: unhashable type: 'dict'
+2025-11-07 13:06:28,256 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 13:06:29,756 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 13:06:36,810 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-07 13:06:53,326 [INFO] - ✅ Agentes e LLMs inicializados.
+2025-11-07 13:06:53,326 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 13:11:22,125 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 13:11:22,558 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-07 13:11:23,642 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 13:11:28,349 [INFO] - ✅ Agentes e LLMs inicializados.
+2025-11-07 13:11:30,253 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 13:11:30,391 [INFO] - 🎯 Decisão do Roteador: ['constitutional_law', 'human_rights_law']
+2025-11-07 13:11:31,277 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 13:11:32,361 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 13:11:33,857 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 13:11:39,782 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 13:11:41,031 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 13:11:41,519 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 13:11:42,644 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 13:11:48,442 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 13:11:48,449 [ERROR] - ❌ Erro catastrófico ao processar a pergunta: O que é o princípio da dignidade da pessoa humana na CF/88?
+2025-11-07 13:11:49,928 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 13:11:49,932 [INFO] - 🎯 Decisão do Roteador: ['consumer_law']
+2025-11-07 13:11:51,202 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 13:11:51,529 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 13:11:52,782 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 13:11:52,785 [ERROR] - ❌ Erro catastrófico ao processar a pergunta: Quais são os meus direitos se um produto que comprei veio com defeito?
+2025-11-07 13:11:54,131 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 13:11:54,135 [INFO] - 🎯 Decisão do Roteador: ['constitutional_law', 'consumer_law']
+2025-11-07 13:11:54,699 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 13:11:55,052 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 13:11:55,454 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 13:12:10,271 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 13:12:10,718 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 13:12:11,167 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 13:12:11,669 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 13:12:11,671 [ERROR] - ❌ Erro catastrófico ao processar a pergunta: Como a Constituição Federal protege os direitos do consumidor?
+2025-11-07 13:12:12,990 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 13:12:13,002 [INFO] - 🎯 Decisão do Roteador: ['out_of_context']
+2025-11-07 13:12:14,273 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 13:12:14,274 [INFO] - 🎯 Decisão do Roteador: ['out_of_context']
+2025-11-07 13:42:23,529 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 13:42:25,515 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 13:42:35,198 [INFO] - 🧠 Inicializando o Gerenciador Multiagente...
+2025-11-07 13:42:37,327 [ERROR] - Erro na inicialização: create_specialized_retriever() got an unexpected keyword argument 'domain_name'
+2025-11-07 13:54:28,960 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 13:54:28,976 [INFO] - 📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-07 13:54:28,976 [INFO] - ==================================================
+2025-11-07 13:54:28,976 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-07 13:54:28,976 [INFO] - 🔍 Procurando por: data
+2025-11-07 13:54:30,224 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 13:54:31,850 [INFO] - 
+📁 Processando: constitution -&gt; constitutional_law
+2025-11-07 13:54:31,850 [INFO] -    📄 Processando: CONSTITUICAO.md
+2025-11-07 13:54:49,746 [INFO] -    ✅ Sucesso: 617 chunks criados
+2025-11-07 13:54:49,746 [INFO] - 
+📁 Processando: direitos_humanos-oea -&gt; human_rights_law
+2025-11-07 13:54:49,746 [INFO] -    📄 Processando: Convencao Americana sobre Direitos Humanos - OEA.pdf
+2025-11-07 13:57:06,344 [INFO] -    ✅ Sucesso: 4557 chunks criados
+2025-11-07 13:57:06,344 [INFO] - 
+📁 Processando: economia -&gt; consumer_law
+2025-11-07 13:57:06,344 [INFO] -    📄 Processando: codigo_defesa_consumidor.pdf
+2025-11-07 14:03:39,553 [INFO] -    ✅ Sucesso: 7094 chunks criados
+2025-11-07 14:03:39,553 [INFO] -    📄 Processando: lei_responsabilidade_fiscal.pdf
+2025-11-07 14:09:32,954 [INFO] -    ✅ Sucesso: 8233 chunks criados
+2025-11-07 14:09:32,954 [INFO] - 
+🎉 PROCESSAMENTO CONCLUÍDO!
+2025-11-07 14:09:32,955 [INFO] -    📊 Total de chunks criados: 20501
+2025-11-07 14:09:33,292 [INFO] -    📚 Collections no Chroma:
+2025-11-07 14:09:33,293 [INFO] -       - human_rights_docs: 4557 documentos
+2025-11-07 14:09:33,293 [INFO] -       - constitutional_docs: 617 documentos
+2025-11-07 14:09:33,293 [INFO] -       - consumer_docs: 15290 documentos
+2025-11-07 14:14:01,780 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 14:14:02,220 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 14:14:08,037 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 14:14:29,439 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 14:14:31,518 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:14:32,639 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:14:33,658 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:18:30,390 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 14:18:30,833 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 14:18:36,181 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 14:19:18,412 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 14:19:19,708 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:19:21,150 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:19:22,841 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:19:35,197 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 14:19:36,014 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:19:37,583 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:19:38,371 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:24:16,246 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 14:24:16,748 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 14:24:19,087 [INFO] - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-07 14:24:25,246 [INFO] - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-07 14:24:27,980 [INFO] - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-07 14:24:30,384 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 14:24:54,295 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 14:24:58,762 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:24:59,269 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:25:06,436 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 14:28:22,499 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 14:28:44,628 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 14:28:45,066 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 14:28:47,193 [INFO] - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-07 14:28:51,542 [INFO] - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-07 14:28:54,503 [INFO] - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-07 14:28:56,888 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 14:29:04,628 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 14:29:06,473 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:29:06,898 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:29:14,641 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 14:30:37,501 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 14:30:37,942 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 14:30:40,072 [INFO] - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-07 14:30:44,348 [INFO] - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-07 14:30:47,097 [INFO] - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-07 14:30:49,502 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 14:31:04,131 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 14:31:05,486 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:31:06,107 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:31:14,524 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 14:32:47,462 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 14:32:47,926 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 14:32:53,285 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 14:33:11,095 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 14:33:11,696 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:33:12,453 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:33:12,894 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:33:18,929 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 14:35:16,196 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 14:35:16,654 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 14:35:18,913 [INFO] - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-07 14:35:23,294 [INFO] - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-07 14:35:26,071 [INFO] - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-07 14:35:28,478 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 14:35:39,277 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 14:35:40,027 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:35:40,637 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:35:49,565 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 14:38:31,954 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 14:38:32,396 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 14:38:37,785 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 14:39:05,997 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 14:39:06,686 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:39:07,061 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:39:07,521 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 14:45:55,995 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 14:45:55,995 [INFO] - 📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-07 14:45:55,995 [INFO] - ==================================================
+2025-11-07 14:45:55,995 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-07 14:45:55,995 [INFO] - 🔍 Procurando por: data
+2025-11-07 14:45:56,707 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 14:46:01,942 [INFO] - 
+📁 Processando: constitution -&gt; constitutional_law
+2025-11-07 14:46:01,943 [INFO] -    📄 Processando: CONSTITUICAO.md
+2025-11-07 14:46:23,749 [INFO] -    ✅ Sucesso: 617 chunks criados
+2025-11-07 14:46:23,749 [INFO] - 
+📁 Processando: direitos_humanos-oea -&gt; human_rights_law
+2025-11-07 14:46:23,749 [INFO] -    📄 Processando: Convencao Americana sobre Direitos Humanos - OEA.pdf
+2025-11-07 14:48:46,917 [INFO] -    ✅ Sucesso: 4557 chunks criados
+2025-11-07 14:48:46,917 [INFO] - 
+📁 Processando: economia -&gt; consumer_law
+2025-11-07 14:48:46,918 [INFO] -    📄 Processando: codigo_defesa_consumidor.pdf
+2025-11-07 14:54:02,015 [INFO] -    ✅ Sucesso: 7094 chunks criados
+2025-11-07 14:54:02,015 [INFO] -    📄 Processando: lei_responsabilidade_fiscal.pdf
+2025-11-07 14:58:28,925 [INFO] -    ✅ Sucesso: 8233 chunks criados
+2025-11-07 14:58:28,925 [INFO] - 
+🎉 PROCESSAMENTO CONCLUÍDO!
+2025-11-07 14:58:28,926 [INFO] -    📊 Total de chunks criados: 20501
+2025-11-07 14:58:29,007 [INFO] -    📚 Collections no Chroma:
+2025-11-07 14:58:29,007 [INFO] -       - constitutional_docs: 617 documentos
+2025-11-07 14:58:29,007 [INFO] -       - consumer_docs: 15290 documentos
+2025-11-07 14:58:29,007 [INFO] -       - human_rights_docs: 4557 documentos
+2025-11-07 15:04:10,881 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 15:04:11,314 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 15:04:16,889 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 15:04:43,226 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 15:04:44,117 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:04:44,818 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:04:45,672 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:20:24,876 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 15:20:24,877 [INFO] - 🧹 Limpando banco de dados antigo em 'chroma_db'...
+2025-11-07 15:20:24,891 [INFO] -    ✅ Banco de dados antigo removido com sucesso.
+2025-11-07 15:20:24,891 [INFO] - 
+📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-07 15:20:24,891 [INFO] - ==================================================
+2025-11-07 15:20:24,891 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-07 15:20:24,891 [INFO] - 🔍 Procurando por: data
+2025-11-07 15:20:25,591 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 15:20:25,776 [INFO] - 
+📁 Processando: constitution -&gt; constitutional_law
+2025-11-07 15:20:25,776 [INFO] -    📄 Processando: CONSTITUICAO.md
+2025-11-07 15:20:29,791 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:20:31,763 [INFO] -    ✅ Sucesso: 617 chunks criados
+2025-11-07 15:20:31,763 [INFO] - 
+📁 Processando: direitos_humanos-oea -&gt; human_rights_law
+2025-11-07 15:20:31,763 [INFO] -    📄 Processando: Convencao Americana sobre Direitos Humanos - OEA.pdf
+2025-11-07 15:20:56,974 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 400 Bad Request"
+2025-11-07 15:20:56,992 [INFO] -    ✅ Sucesso: 0 chunks criados
+2025-11-07 15:20:56,992 [INFO] - 
+📁 Processando: economia -&gt; consumer_law
+2025-11-07 15:20:56,993 [INFO] -    📄 Processando: codigo_defesa_consumidor.pdf
+2025-11-07 15:21:33,094 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 400 Bad Request"
+2025-11-07 15:21:33,114 [INFO] -    ✅ Sucesso: 0 chunks criados
+2025-11-07 15:21:33,115 [INFO] -    📄 Processando: lei_responsabilidade_fiscal.pdf
+2025-11-07 15:22:13,096 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 400 Bad Request"
+2025-11-07 15:22:13,119 [INFO] -    ✅ Sucesso: 0 chunks criados
+2025-11-07 15:22:13,119 [INFO] - 
+🎉 PROCESSAMENTO CONCLUÍDO!
+2025-11-07 15:22:13,119 [INFO] -    📊 Total de chunks criados: 617
+2025-11-07 15:22:13,153 [INFO] -    📚 Collections no Chroma:
+2025-11-07 15:22:13,153 [INFO] -       - human_rights_docs: 0 documentos
+2025-11-07 15:22:13,154 [INFO] -       - constitutional_docs: 617 documentos
+2025-11-07 15:22:13,154 [INFO] -       - consumer_docs: 0 documentos
+2025-11-07 15:29:16,220 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 15:29:16,221 [INFO] - 🧹 Limpando banco de dados antigo em 'chroma_db'...
+2025-11-07 15:29:16,223 [INFO] -    ✅ Banco de dados antigo removido com sucesso.
+2025-11-07 15:29:16,223 [INFO] - 
+📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-07 15:29:16,223 [INFO] - ==================================================
+2025-11-07 15:29:16,223 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-07 15:29:16,223 [INFO] - 🔍 Procurando por: data
+2025-11-07 15:29:16,893 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 15:29:16,969 [INFO] - 
+📁 Processando: constitution -&gt; constitutional_law
+2025-11-07 15:29:16,970 [INFO] -    📄 Processando: CONSTITUICAO.md
+2025-11-07 15:29:18,930 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:29:21,419 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:29:23,759 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:29:25,086 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:29:25,235 [INFO] -    ✅ Sucesso: 617 chunks criados
+2025-11-07 15:29:25,235 [INFO] - 
+📁 Processando: direitos_humanos-oea -&gt; human_rights_law
+2025-11-07 15:29:25,235 [INFO] -    📄 Processando: Convencao Americana sobre Direitos Humanos - OEA.pdf
+2025-11-07 15:29:48,998 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:29:53,924 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:29:57,926 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:30:02,742 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:30:07,329 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:30:11,770 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:30:16,276 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:30:21,001 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:30:25,370 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:30:30,207 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:30:36,192 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:30:39,259 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:30:39,259 [INFO] - Retrying request to /embeddings in 2.692000 seconds
+2025-11-07 15:30:45,748 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:30:49,208 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:30:49,208 [INFO] - Retrying request to /embeddings in 2.299000 seconds
+2025-11-07 15:30:55,054 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:30:58,568 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:30:58,569 [INFO] - Retrying request to /embeddings in 2.601000 seconds
+2025-11-07 15:31:05,491 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:31:09,063 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:31:09,063 [INFO] - Retrying request to /embeddings in 1.770000 seconds
+2025-11-07 15:31:14,155 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:31:17,375 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:31:17,375 [INFO] - Retrying request to /embeddings in 3.196000 seconds
+2025-11-07 15:31:24,711 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:31:27,724 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:31:27,724 [INFO] - Retrying request to /embeddings in 2.461000 seconds
+2025-11-07 15:31:33,833 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:31:35,555 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:31:35,555 [INFO] - Retrying request to /embeddings in 3.989000 seconds
+2025-11-07 15:31:42,362 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:31:44,473 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:31:44,473 [INFO] - Retrying request to /embeddings in 4.781000 seconds
+2025-11-07 15:31:52,873 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:31:57,285 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:31:57,286 [INFO] - Retrying request to /embeddings in 1.468000 seconds
+2025-11-07 15:32:02,472 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:32:05,660 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:32:05,661 [INFO] - Retrying request to /embeddings in 2.872000 seconds
+2025-11-07 15:32:11,599 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:32:14,634 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:32:14,635 [INFO] - Retrying request to /embeddings in 3.276000 seconds
+2025-11-07 15:32:20,894 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:32:23,027 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:32:23,027 [INFO] - Retrying request to /embeddings in 2.177000 seconds
+2025-11-07 15:32:27,816 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:32:28,941 [INFO] -    ✅ Sucesso: 4557 chunks criados
+2025-11-07 15:32:28,941 [INFO] - 
+📁 Processando: economia -&gt; consumer_law
+2025-11-07 15:32:28,942 [INFO] -    📄 Processando: codigo_defesa_consumidor.pdf
+2025-11-07 15:33:02,072 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:33:05,722 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:33:09,844 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:33:13,075 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:33:17,157 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:33:19,176 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:33:19,176 [INFO] - Retrying request to /embeddings in 2.983000 seconds
+2025-11-07 15:33:24,792 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:33:26,444 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:33:26,444 [INFO] - Retrying request to /embeddings in 5.393000 seconds
+2025-11-07 15:33:34,941 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:33:37,758 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:33:37,758 [INFO] - Retrying request to /embeddings in 3.771000 seconds
+2025-11-07 15:33:44,816 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:33:48,218 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:33:48,218 [INFO] - Retrying request to /embeddings in 2.943000 seconds
+2025-11-07 15:33:54,796 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:33:56,751 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:33:56,752 [INFO] - Retrying request to /embeddings in 3.797000 seconds
+2025-11-07 15:34:04,224 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:34:06,732 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:34:06,732 [INFO] - Retrying request to /embeddings in 3.722000 seconds
+2025-11-07 15:34:14,583 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:34:16,868 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:34:16,868 [INFO] - Retrying request to /embeddings in 3.192000 seconds
+2025-11-07 15:34:23,124 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:34:25,937 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:34:25,937 [INFO] - Retrying request to /embeddings in 3.499000 seconds
+2025-11-07 15:34:33,766 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:34:36,766 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:34:36,766 [INFO] - Retrying request to /embeddings in 2.186000 seconds
+2025-11-07 15:34:42,418 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:34:45,256 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:34:45,257 [INFO] - Retrying request to /embeddings in 3.148000 seconds
+2025-11-07 15:34:52,102 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:34:55,467 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:34:55,468 [INFO] - Retrying request to /embeddings in 2.444000 seconds
+2025-11-07 15:35:01,633 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:35:04,854 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:35:04,854 [INFO] - Retrying request to /embeddings in 2.803000 seconds
+2025-11-07 15:35:12,146 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:35:15,364 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:35:15,364 [INFO] - Retrying request to /embeddings in 1.677000 seconds
+2025-11-07 15:35:19,882 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:35:22,537 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:35:22,537 [INFO] - Retrying request to /embeddings in 4.184000 seconds
+2025-11-07 15:35:30,065 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:35:32,773 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:35:32,774 [INFO] - Retrying request to /embeddings in 3.709000 seconds
+2025-11-07 15:35:39,579 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:35:41,728 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:35:41,729 [INFO] - Retrying request to /embeddings in 4.140000 seconds
+2025-11-07 15:35:49,517 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:35:52,715 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:35:52,715 [INFO] - Retrying request to /embeddings in 2.942000 seconds
+2025-11-07 15:35:59,193 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:36:01,771 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:36:01,771 [INFO] - Retrying request to /embeddings in 3.367000 seconds
+2025-11-07 15:36:07,831 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:36:10,426 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:36:10,426 [INFO] - Retrying request to /embeddings in 4.146000 seconds
+2025-11-07 15:36:17,992 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:36:21,507 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:36:21,507 [INFO] - Retrying request to /embeddings in 2.711000 seconds
+2025-11-07 15:36:27,064 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:36:30,292 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:36:30,293 [INFO] - Retrying request to /embeddings in 3.136000 seconds
+2025-11-07 15:36:38,137 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:36:40,818 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:36:40,819 [INFO] - Retrying request to /embeddings in 1.771000 seconds
+2025-11-07 15:36:45,214 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:36:48,056 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:36:48,056 [INFO] - Retrying request to /embeddings in 4.235000 seconds
+2025-11-07 15:36:55,954 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:36:59,601 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:36:59,601 [INFO] - Retrying request to /embeddings in 2.220000 seconds
+2025-11-07 15:37:04,874 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:37:09,142 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:37:11,962 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:37:11,963 [INFO] - Retrying request to /embeddings in 8.816000 seconds
+2025-11-07 15:37:23,968 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:37:25,580 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:37:25,581 [INFO] - Retrying request to /embeddings in 4.639000 seconds
+2025-11-07 15:37:33,737 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:37:35,540 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:37:35,541 [INFO] - Retrying request to /embeddings in 4.256000 seconds
+2025-11-07 15:37:42,979 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:37:45,366 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:37:45,367 [INFO] - Retrying request to /embeddings in 3.929000 seconds
+2025-11-07 15:37:52,570 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:37:54,977 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:37:54,978 [INFO] - Retrying request to /embeddings in 4.007000 seconds
+2025-11-07 15:38:01,919 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:38:04,818 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:38:05,693 [INFO] -    ✅ Sucesso: 7094 chunks criados
+2025-11-07 15:38:05,693 [INFO] -    📄 Processando: lei_responsabilidade_fiscal.pdf
+2025-11-07 15:38:45,166 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:38:49,027 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:38:53,121 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:38:57,778 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:39:01,791 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:39:05,655 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:39:10,447 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:39:12,773 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:39:12,774 [INFO] - Retrying request to /embeddings in 5.860000 seconds
+2025-11-07 15:39:21,526 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:39:24,240 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:39:24,241 [INFO] - Retrying request to /embeddings in 4.236000 seconds
+2025-11-07 15:39:31,670 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:39:34,276 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:39:34,276 [INFO] - Retrying request to /embeddings in 3.707000 seconds
+2025-11-07 15:39:40,698 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:39:43,281 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:39:43,281 [INFO] - Retrying request to /embeddings in 3.989000 seconds
+2025-11-07 15:39:50,181 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:39:52,410 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:39:52,410 [INFO] - Retrying request to /embeddings in 4.413000 seconds
+2025-11-07 15:39:59,553 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:40:03,426 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:40:05,860 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:40:05,861 [INFO] - Retrying request to /embeddings in 9.421000 seconds
+2025-11-07 15:40:18,457 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:40:21,068 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:40:21,069 [INFO] - Retrying request to /embeddings in 4.236000 seconds
+2025-11-07 15:40:28,029 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:40:30,695 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:40:30,696 [INFO] - Retrying request to /embeddings in 4.068000 seconds
+2025-11-07 15:40:38,233 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:40:41,611 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:40:41,611 [INFO] - Retrying request to /embeddings in 2.673000 seconds
+2025-11-07 15:40:47,341 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:40:50,571 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:40:50,571 [INFO] - Retrying request to /embeddings in 3.199000 seconds
+2025-11-07 15:40:57,737 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:41:00,635 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:41:00,636 [INFO] - Retrying request to /embeddings in 2.747000 seconds
+2025-11-07 15:41:06,293 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:41:09,934 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:41:09,934 [INFO] - Retrying request to /embeddings in 3.111000 seconds
+2025-11-07 15:41:15,688 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:41:18,502 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:41:18,502 [INFO] - Retrying request to /embeddings in 3.725000 seconds
+2025-11-07 15:41:25,568 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:41:28,734 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:41:28,735 [INFO] - Retrying request to /embeddings in 3.295000 seconds
+2025-11-07 15:41:35,219 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:41:38,795 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:41:38,795 [INFO] - Retrying request to /embeddings in 2.801000 seconds
+2025-11-07 15:41:44,027 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:41:46,687 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:41:46,687 [INFO] - Retrying request to /embeddings in 4.273000 seconds
+2025-11-07 15:41:56,127 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:41:58,593 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:41:58,593 [INFO] - Retrying request to /embeddings in 1.864000 seconds
+2025-11-07 15:42:03,634 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:42:06,318 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:42:06,318 [INFO] - Retrying request to /embeddings in 3.543000 seconds
+2025-11-07 15:42:12,807 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:42:16,854 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:42:16,855 [INFO] - Retrying request to /embeddings in 2.675000 seconds
+2025-11-07 15:42:23,057 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:42:26,418 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:42:26,419 [INFO] - Retrying request to /embeddings in 2.661000 seconds
+2025-11-07 15:42:32,129 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:42:34,957 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:42:34,958 [INFO] - Retrying request to /embeddings in 3.725000 seconds
+2025-11-07 15:42:42,059 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:42:45,466 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:42:45,466 [INFO] - Retrying request to /embeddings in 2.707000 seconds
+2025-11-07 15:42:52,287 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:42:55,037 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:42:55,038 [INFO] - Retrying request to /embeddings in 2.416000 seconds
+2025-11-07 15:43:00,268 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:43:02,460 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:43:02,460 [INFO] - Retrying request to /embeddings in 4.391000 seconds
+2025-11-07 15:43:09,728 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:43:12,685 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:43:12,685 [INFO] - Retrying request to /embeddings in 3.800000 seconds
+2025-11-07 15:43:19,160 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:43:21,299 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:43:21,299 [INFO] - Retrying request to /embeddings in 4.868000 seconds
+2025-11-07 15:43:28,441 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:43:30,840 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:43:30,841 [INFO] - Retrying request to /embeddings in 4.849000 seconds
+2025-11-07 15:43:38,280 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:43:41,204 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:43:41,204 [INFO] - Retrying request to /embeddings in 3.887000 seconds
+2025-11-07 15:43:48,080 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:43:53,596 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:43:58,009 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:43:59,921 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:43:59,922 [INFO] - Retrying request to /embeddings in 9.606000 seconds
+2025-11-07 15:44:10,752 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:44:10,752 [INFO] - Retrying request to /embeddings in 2.959000 seconds
+2025-11-07 15:44:16,283 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:44:19,315 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:44:19,315 [INFO] - Retrying request to /embeddings in 3.757000 seconds
+2025-11-07 15:44:26,251 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:44:29,013 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:44:29,013 [INFO] - Retrying request to /embeddings in 3.526000 seconds
+2025-11-07 15:44:35,327 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:44:37,013 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:44:37,552 [INFO] -    ✅ Sucesso: 8233 chunks criados
+2025-11-07 15:44:37,552 [INFO] - 
+🎉 PROCESSAMENTO CONCLUÍDO!
+2025-11-07 15:44:37,552 [INFO] -    📊 Total de chunks criados: 20501
+2025-11-07 15:44:37,624 [INFO] -    📚 Collections no Chroma:
+2025-11-07 15:44:37,624 [INFO] -       - consumer_docs: 15290 documentos
+2025-11-07 15:44:37,624 [INFO] -       - constitutional_docs: 617 documentos
+2025-11-07 15:44:37,624 [INFO] -       - human_rights_docs: 4557 documentos
+2025-11-07 15:45:07,413 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 15:45:07,857 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 15:45:13,405 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 15:45:32,221 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 15:45:35,077 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:45:35,936 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:45:37,372 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:45:44,741 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 15:50:19,590 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 15:50:20,034 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 15:50:25,584 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 15:50:43,722 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 15:50:44,229 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:50:44,806 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:50:45,484 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:50:53,794 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 15:53:56,723 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 15:53:57,154 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 15:54:02,666 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 15:54:16,394 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 15:54:16,874 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:54:17,568 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:54:18,127 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:54:27,580 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 15:57:14,027 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 15:57:14,027 [INFO] - 🧹 Limpando banco de dados antigo em 'chroma_db'...
+2025-11-07 15:57:14,045 [INFO] -    ✅ Banco de dados antigo removido com sucesso.
+2025-11-07 15:57:14,045 [INFO] - 
+📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-07 15:57:14,045 [INFO] - ==================================================
+2025-11-07 15:57:14,045 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-07 15:57:14,046 [INFO] - 🔍 Procurando por: data
+2025-11-07 15:57:14,722 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 15:57:14,905 [INFO] - 
+📁 Processando: constitution -&gt; constitutional_law
+2025-11-07 15:57:14,905 [INFO] -    📄 Processando: CONSTITUICAO.md
+2025-11-07 15:57:17,804 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:57:19,828 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:57:22,454 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:57:23,959 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:57:24,065 [INFO] -    ✅ Sucesso: 617 chunks criados
+2025-11-07 15:57:24,065 [INFO] - 
+📁 Processando: direitos_humanos-oea -&gt; human_rights_law
+2025-11-07 15:57:24,065 [INFO] -    📄 Processando: Convencao Americana sobre Direitos Humanos - OEA.pdf
+2025-11-07 15:57:49,971 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:57:54,256 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:57:58,269 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:58:03,092 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:58:07,296 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:58:11,402 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:58:15,488 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:58:20,840 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:58:25,949 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:58:30,945 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:58:34,819 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:58:36,757 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:58:36,757 [INFO] - Retrying request to /embeddings in 5.231000 seconds
+2025-11-07 15:58:45,766 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:58:47,852 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:58:47,853 [INFO] - Retrying request to /embeddings in 3.699000 seconds
+2025-11-07 15:58:54,385 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:58:56,557 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:58:56,558 [INFO] - Retrying request to /embeddings in 4.655000 seconds
+2025-11-07 15:59:03,861 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:59:06,285 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:59:06,286 [INFO] - Retrying request to /embeddings in 4.598000 seconds
+2025-11-07 15:59:14,526 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:59:16,682 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:59:16,682 [INFO] - Retrying request to /embeddings in 3.938000 seconds
+2025-11-07 15:59:23,788 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:59:26,601 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:59:26,602 [INFO] - Retrying request to /embeddings in 3.637000 seconds
+2025-11-07 15:59:33,160 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:59:34,880 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:59:34,880 [INFO] - Retrying request to /embeddings in 4.855000 seconds
+2025-11-07 15:59:42,057 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:59:43,942 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:59:43,942 [INFO] - Retrying request to /embeddings in 5.490000 seconds
+2025-11-07 15:59:53,071 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 15:59:55,906 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 15:59:55,906 [INFO] - Retrying request to /embeddings in 2.886000 seconds
+2025-11-07 16:00:01,804 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:00:04,383 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:00:04,384 [INFO] - Retrying request to /embeddings in 4.152000 seconds
+2025-11-07 16:00:11,041 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:00:12,870 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:00:12,871 [INFO] - Retrying request to /embeddings in 5.114000 seconds
+2025-11-07 16:00:21,670 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:00:24,004 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:00:24,004 [INFO] - Retrying request to /embeddings in 1.370000 seconds
+2025-11-07 16:00:28,122 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:00:30,016 [INFO] -    ✅ Sucesso: 4557 chunks criados
+2025-11-07 16:00:30,016 [INFO] - 
+📁 Processando: economia -&gt; consumer_law
+2025-11-07 16:00:30,017 [INFO] -    📄 Processando: codigo_defesa_consumidor.pdf
+2025-11-07 16:01:03,679 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:01:07,887 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:01:11,615 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:01:14,975 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:01:21,120 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:01:24,119 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 502 Bad Gateway"
+2025-11-07 16:01:24,119 [INFO] - Retrying request to /embeddings in 0.491636 seconds
+2025-11-07 16:01:25,710 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:01:25,710 [INFO] - Retrying request to /embeddings in 6.211000 seconds
+2025-11-07 16:01:34,758 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:01:37,076 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:01:37,076 [INFO] - Retrying request to /embeddings in 4.531000 seconds
+2025-11-07 16:01:44,602 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:01:46,796 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:01:46,796 [INFO] - Retrying request to /embeddings in 4.403000 seconds
+2025-11-07 16:01:53,983 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:01:55,834 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:01:55,835 [INFO] - Retrying request to /embeddings in 4.959000 seconds
+2025-11-07 16:02:05,631 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:02:07,948 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:02:07,948 [INFO] - Retrying request to /embeddings in 2.372000 seconds
+2025-11-07 16:02:13,228 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:02:15,737 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:02:15,738 [INFO] - Retrying request to /embeddings in 4.363000 seconds
+2025-11-07 16:02:25,203 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:02:27,506 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:02:27,506 [INFO] - Retrying request to /embeddings in 2.166000 seconds
+2025-11-07 16:02:32,652 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:02:34,690 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:02:34,690 [INFO] - Retrying request to /embeddings in 4.375000 seconds
+2025-11-07 16:02:41,935 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:02:44,264 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:02:44,265 [INFO] - Retrying request to /embeddings in 4.337000 seconds
+2025-11-07 16:02:51,401 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:02:54,357 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:02:54,358 [INFO] - Retrying request to /embeddings in 3.712000 seconds
+2025-11-07 16:03:00,858 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:03:03,238 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:03:03,239 [INFO] - Retrying request to /embeddings in 4.335000 seconds
+2025-11-07 16:03:10,566 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:03:12,498 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:03:12,499 [INFO] - Retrying request to /embeddings in 4.791000 seconds
+2025-11-07 16:03:20,125 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:03:22,254 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:03:22,254 [INFO] - Retrying request to /embeddings in 4.408000 seconds
+2025-11-07 16:03:30,097 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:03:32,816 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:03:32,817 [INFO] - Retrying request to /embeddings in 3.593000 seconds
+2025-11-07 16:03:39,190 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:03:41,359 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:03:41,360 [INFO] - Retrying request to /embeddings in 4.731000 seconds
+2025-11-07 16:03:48,989 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:03:51,552 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:03:51,553 [INFO] - Retrying request to /embeddings in 4.102000 seconds
+2025-11-07 16:03:58,636 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:04:01,041 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:04:01,042 [INFO] - Retrying request to /embeddings in 4.254000 seconds
+2025-11-07 16:04:08,493 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:04:13,176 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:04:17,721 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:04:19,896 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:04:19,896 [INFO] - Retrying request to /embeddings in 9.663000 seconds
+2025-11-07 16:04:31,583 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:04:31,584 [INFO] - Retrying request to /embeddings in 2.415000 seconds
+2025-11-07 16:04:37,361 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:04:40,367 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:04:40,367 [INFO] - Retrying request to /embeddings in 2.832000 seconds
+2025-11-07 16:04:46,646 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:04:49,251 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:04:49,252 [INFO] - Retrying request to /embeddings in 3.118000 seconds
+2025-11-07 16:04:55,663 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:04:58,968 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:04:58,968 [INFO] - Retrying request to /embeddings in 3.230000 seconds
+2025-11-07 16:05:05,793 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:05:08,538 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:05:08,538 [INFO] - Retrying request to /embeddings in 2.904000 seconds
+2025-11-07 16:05:14,889 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:05:17,704 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:05:17,705 [INFO] - Retrying request to /embeddings in 3.385000 seconds
+2025-11-07 16:05:24,643 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:05:27,424 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:05:27,424 [INFO] - Retrying request to /embeddings in 3.163000 seconds
+2025-11-07 16:05:33,945 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:05:37,100 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:05:37,100 [INFO] - Retrying request to /embeddings in 3.014000 seconds
+2025-11-07 16:05:43,022 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:05:45,070 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:05:45,071 [INFO] - Retrying request to /embeddings in 4.474000 seconds
+2025-11-07 16:05:52,237 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:05:55,667 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:05:55,667 [INFO] - Retrying request to /embeddings in 3.531000 seconds
+2025-11-07 16:06:02,667 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:06:05,382 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:06:05,383 [INFO] - Retrying request to /embeddings in 3.498000 seconds
+2025-11-07 16:06:13,922 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:06:18,298 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:06:18,627 [INFO] -    ✅ Sucesso: 7094 chunks criados
+2025-11-07 16:06:18,627 [INFO] -    📄 Processando: lei_responsabilidade_fiscal.pdf
+2025-11-07 16:06:56,531 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:07:01,811 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:07:06,738 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:07:11,881 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:07:17,094 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:07:22,527 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:07:28,389 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:07:32,690 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:07:35,890 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:07:35,890 [INFO] - Retrying request to /embeddings in 2.446000 seconds
+2025-11-07 16:07:42,192 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:07:45,418 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:07:45,418 [INFO] - Retrying request to /embeddings in 2.455000 seconds
+2025-11-07 16:07:51,348 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:07:54,784 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:07:54,785 [INFO] - Retrying request to /embeddings in 2.361000 seconds
+2025-11-07 16:08:00,437 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:08:03,603 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:08:03,604 [INFO] - Retrying request to /embeddings in 3.119000 seconds
+2025-11-07 16:08:10,108 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:08:12,835 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:08:12,836 [INFO] - Retrying request to /embeddings in 3.131000 seconds
+2025-11-07 16:08:19,571 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:08:23,680 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:08:23,681 [INFO] - Retrying request to /embeddings in 1.834000 seconds
+2025-11-07 16:08:29,199 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:08:32,723 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:08:32,723 [INFO] - Retrying request to /embeddings in 2.433000 seconds
+2025-11-07 16:08:38,580 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:08:42,017 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:08:42,017 [INFO] - Retrying request to /embeddings in 2.630000 seconds
+2025-11-07 16:08:49,194 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:08:52,862 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:08:52,862 [INFO] - Retrying request to /embeddings in 1.319000 seconds
+2025-11-07 16:08:57,123 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:09:00,616 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:09:00,616 [INFO] - Retrying request to /embeddings in 3.055000 seconds
+2025-11-07 16:09:07,381 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:09:10,788 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:09:10,788 [INFO] - Retrying request to /embeddings in 2.458000 seconds
+2025-11-07 16:09:16,080 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:09:19,994 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:09:19,995 [INFO] - Retrying request to /embeddings in 2.785000 seconds
+2025-11-07 16:09:26,448 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:09:29,576 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:09:29,576 [INFO] - Retrying request to /embeddings in 2.526000 seconds
+2025-11-07 16:09:36,076 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:09:39,824 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:09:39,825 [INFO] - Retrying request to /embeddings in 2.102000 seconds
+2025-11-07 16:09:45,052 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:09:48,000 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:09:48,001 [INFO] - Retrying request to /embeddings in 3.364000 seconds
+2025-11-07 16:09:55,239 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:09:58,392 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:09:58,393 [INFO] - Retrying request to /embeddings in 2.457000 seconds
+2025-11-07 16:10:03,534 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:10:05,959 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:10:05,960 [INFO] - Retrying request to /embeddings in 4.387000 seconds
+2025-11-07 16:10:14,047 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:10:18,395 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:10:18,395 [INFO] - Retrying request to /embeddings in 1.354000 seconds
+2025-11-07 16:10:23,289 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:10:26,760 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:10:26,760 [INFO] - Retrying request to /embeddings in 2.523000 seconds
+2025-11-07 16:10:32,776 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:10:36,951 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:10:36,951 [INFO] - Retrying request to /embeddings in 1.891000 seconds
+2025-11-07 16:10:41,863 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:10:44,387 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:10:44,387 [INFO] - Retrying request to /embeddings in 4.012000 seconds
+2025-11-07 16:10:51,908 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:10:55,339 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:10:55,340 [INFO] - Retrying request to /embeddings in 2.594000 seconds
+2025-11-07 16:11:01,295 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:11:04,145 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:11:04,145 [INFO] - Retrying request to /embeddings in 3.194000 seconds
+2025-11-07 16:11:11,097 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:11:14,819 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:11:14,819 [INFO] - Retrying request to /embeddings in 1.938000 seconds
+2025-11-07 16:11:19,280 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:11:22,274 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:11:22,274 [INFO] - Retrying request to /embeddings in 4.093000 seconds
+2025-11-07 16:11:29,715 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:11:33,134 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:11:33,135 [INFO] - Retrying request to /embeddings in 2.942000 seconds
+2025-11-07 16:11:39,938 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:11:42,419 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:11:42,420 [INFO] - Retrying request to /embeddings in 3.222000 seconds
+2025-11-07 16:11:49,196 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:11:51,458 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:11:51,458 [INFO] - Retrying request to /embeddings in 3.391000 seconds
+2025-11-07 16:11:58,296 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:12:01,871 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:12:01,871 [INFO] - Retrying request to /embeddings in 2.636000 seconds
+2025-11-07 16:12:08,038 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:12:10,972 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:12:10,972 [INFO] - Retrying request to /embeddings in 2.973000 seconds
+2025-11-07 16:12:17,511 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:12:20,152 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:12:20,153 [INFO] - Retrying request to /embeddings in 3.400000 seconds
+2025-11-07 16:12:27,542 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:12:33,209 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:12:38,187 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:12:40,646 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:12:41,262 [INFO] -    ✅ Sucesso: 8233 chunks criados
+2025-11-07 16:12:41,262 [INFO] - 
+🎉 PROCESSAMENTO CONCLUÍDO!
+2025-11-07 16:12:41,263 [INFO] -    📊 Total de chunks criados: 20501
+2025-11-07 16:12:41,350 [INFO] -    📚 Collections no Chroma:
+2025-11-07 16:12:41,350 [INFO] -       - human_rights_docs: 4557 documentos
+2025-11-07 16:12:41,350 [INFO] -       - constitutional_docs: 617 documentos
+2025-11-07 16:12:41,350 [INFO] -       - consumer_docs: 15290 documentos
+2025-11-07 16:20:03,237 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 16:20:03,710 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 16:20:09,263 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 16:20:26,366 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:20:26,860 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:20:27,365 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:20:27,824 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:20:36,801 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:29:06,098 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 16:29:06,098 [INFO] - 🧹 Limpando banco de dados antigo em 'chroma_db'...
+2025-11-07 16:29:06,121 [INFO] -    ✅ Banco de dados antigo removido com sucesso.
+2025-11-07 16:29:06,121 [INFO] - 
+📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-07 16:29:06,122 [INFO] - ==================================================
+2025-11-07 16:29:06,122 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-07 16:29:06,122 [INFO] - 🔍 Procurando por: data
+2025-11-07 16:29:06,791 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 16:29:06,874 [INFO] - 
+📁 Processando: constitution -&gt; constitutional_law
+2025-11-07 16:29:06,874 [INFO] -    📄 Processando: CONSTITUICAO.md
+2025-11-07 16:29:09,010 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:29:11,696 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:29:14,588 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:29:16,515 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:29:17,032 [INFO] -    ✅ Sucesso: 617 chunks criados
+2025-11-07 16:29:17,032 [INFO] - 
+📁 Processando: direitos_humanos-oea -&gt; human_rights_law
+2025-11-07 16:29:17,033 [INFO] -    📄 Processando: Convencao Americana sobre Direitos Humanos - OEA.pdf
+2025-11-07 16:29:39,734 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:29:43,809 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:29:48,215 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:29:52,977 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:29:57,261 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:30:01,223 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:30:04,991 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:30:09,354 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:30:12,958 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:30:16,491 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:30:18,728 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:30:18,728 [INFO] - Retrying request to /embeddings in 4.954000 seconds
+2025-11-07 16:30:25,858 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:30:28,121 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:30:28,121 [INFO] - Retrying request to /embeddings in 5.184000 seconds
+2025-11-07 16:30:36,225 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:30:37,976 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:30:37,977 [INFO] - Retrying request to /embeddings in 4.777000 seconds
+2025-11-07 16:30:46,093 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:30:49,039 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:30:49,039 [INFO] - Retrying request to /embeddings in 3.372000 seconds
+2025-11-07 16:30:55,151 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:30:57,414 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:30:57,414 [INFO] - Retrying request to /embeddings in 4.676000 seconds
+2025-11-07 16:31:05,357 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:31:07,591 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:31:07,591 [INFO] - Retrying request to /embeddings in 4.197000 seconds
+2025-11-07 16:31:14,749 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:31:17,120 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:31:17,121 [INFO] - Retrying request to /embeddings in 4.283000 seconds
+2025-11-07 16:31:24,346 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:31:26,740 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:31:26,741 [INFO] - Retrying request to /embeddings in 4.199000 seconds
+2025-11-07 16:31:33,760 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:31:36,361 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:31:36,361 [INFO] - Retrying request to /embeddings in 4.270000 seconds
+2025-11-07 16:31:44,443 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:31:47,166 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:31:47,166 [INFO] - Retrying request to /embeddings in 2.816000 seconds
+2025-11-07 16:31:52,960 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:31:55,176 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:31:55,176 [INFO] - Retrying request to /embeddings in 4.546000 seconds
+2025-11-07 16:32:02,410 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:32:04,438 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:32:04,438 [INFO] - Retrying request to /embeddings in 4.706000 seconds
+2025-11-07 16:32:12,591 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:32:14,566 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:32:14,567 [INFO] - Retrying request to /embeddings in 1.884000 seconds
+2025-11-07 16:32:19,170 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:32:19,864 [INFO] -    ✅ Sucesso: 4557 chunks criados
+2025-11-07 16:32:19,864 [INFO] - 
+📁 Processando: economia -&gt; consumer_law
+2025-11-07 16:32:19,864 [INFO] -    📄 Processando: codigo_defesa_consumidor.pdf
+2025-11-07 16:32:52,370 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:32:56,431 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:33:00,922 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:33:05,131 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:33:09,933 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:33:12,128 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:33:12,128 [INFO] - Retrying request to /embeddings in 1.373000 seconds
+2025-11-07 16:33:16,344 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:33:18,722 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:33:18,722 [INFO] - Retrying request to /embeddings in 4.460000 seconds
+2025-11-07 16:33:28,057 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:33:30,473 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:33:30,473 [INFO] - Retrying request to /embeddings in 2.295000 seconds
+2025-11-07 16:33:35,324 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:33:37,770 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:33:37,770 [INFO] - Retrying request to /embeddings in 4.617000 seconds
+2025-11-07 16:33:45,335 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:33:47,984 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:33:47,984 [INFO] - Retrying request to /embeddings in 3.935000 seconds
+2025-11-07 16:33:54,820 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:33:57,473 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:33:57,474 [INFO] - Retrying request to /embeddings in 4.213000 seconds
+2025-11-07 16:34:05,472 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:34:07,835 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:34:07,835 [INFO] - Retrying request to /embeddings in 3.407000 seconds
+2025-11-07 16:34:15,846 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:34:18,758 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:34:18,759 [INFO] - Retrying request to /embeddings in 1.910000 seconds
+2025-11-07 16:34:23,598 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:34:25,789 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:34:25,789 [INFO] - Retrying request to /embeddings in 4.404000 seconds
+2025-11-07 16:34:33,517 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:34:36,187 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:34:36,188 [INFO] - Retrying request to /embeddings in 3.447000 seconds
+2025-11-07 16:34:42,650 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:34:45,557 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:34:45,557 [INFO] - Retrying request to /embeddings in 3.607000 seconds
+2025-11-07 16:34:52,032 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:34:54,648 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:34:54,648 [INFO] - Retrying request to /embeddings in 4.248000 seconds
+2025-11-07 16:35:02,288 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:35:04,577 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:35:04,577 [INFO] - Retrying request to /embeddings in 3.684000 seconds
+2025-11-07 16:35:11,404 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:35:13,528 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:35:13,529 [INFO] - Retrying request to /embeddings in 4.439000 seconds
+2025-11-07 16:35:20,780 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:35:23,080 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:35:23,080 [INFO] - Retrying request to /embeddings in 4.625000 seconds
+2025-11-07 16:35:31,022 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:35:33,603 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:35:33,603 [INFO] - Retrying request to /embeddings in 3.628000 seconds
+2025-11-07 16:35:40,271 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:35:42,887 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:35:42,887 [INFO] - Retrying request to /embeddings in 4.025000 seconds
+2025-11-07 16:35:49,682 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:35:52,396 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:35:52,396 [INFO] - Retrying request to /embeddings in 3.971000 seconds
+2025-11-07 16:35:58,915 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:36:01,443 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:36:01,443 [INFO] - Retrying request to /embeddings in 4.355000 seconds
+2025-11-07 16:36:09,103 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:36:11,078 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:36:11,079 [INFO] - Retrying request to /embeddings in 4.373000 seconds
+2025-11-07 16:36:18,850 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:36:21,454 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:36:21,454 [INFO] - Retrying request to /embeddings in 3.215000 seconds
+2025-11-07 16:36:27,503 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:36:29,952 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:36:29,953 [INFO] - Retrying request to /embeddings in 3.866000 seconds
+2025-11-07 16:36:37,140 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:36:43,610 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:36:47,789 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:36:49,767 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:36:49,767 [INFO] - Retrying request to /embeddings in 9.521000 seconds
+2025-11-07 16:37:03,601 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:37:06,717 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:37:06,717 [INFO] - Retrying request to /embeddings in 5.437000 seconds
+2025-11-07 16:37:16,108 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:37:18,797 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:37:18,797 [INFO] - Retrying request to /embeddings in 2.798000 seconds
+2025-11-07 16:37:25,705 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:37:27,603 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:37:27,604 [INFO] - Retrying request to /embeddings in 3.543000 seconds
+2025-11-07 16:37:34,227 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:37:37,293 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:37:37,294 [INFO] - Retrying request to /embeddings in 3.345000 seconds
+2025-11-07 16:37:43,607 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:37:45,763 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:37:45,764 [INFO] - Retrying request to /embeddings in 4.598000 seconds
+2025-11-07 16:37:53,126 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:37:55,964 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:37:57,140 [INFO] -    ✅ Sucesso: 7094 chunks criados
+2025-11-07 16:37:57,140 [INFO] -    📄 Processando: lei_responsabilidade_fiscal.pdf
+2025-11-07 16:38:34,146 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:38:38,613 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:38:43,066 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:38:48,384 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:38:52,410 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:38:57,499 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:38:59,901 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:38:59,901 [INFO] - Retrying request to /embeddings in 0.749000 seconds
+2025-11-07 16:39:03,773 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:39:06,626 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:39:06,626 [INFO] - Retrying request to /embeddings in 3.619000 seconds
+2025-11-07 16:39:14,098 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:39:16,764 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:39:16,765 [INFO] - Retrying request to /embeddings in 3.046000 seconds
+2025-11-07 16:39:22,897 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:39:24,675 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:39:24,676 [INFO] - Retrying request to /embeddings in 4.640000 seconds
+2025-11-07 16:39:32,419 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:39:35,390 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:39:35,390 [INFO] - Retrying request to /embeddings in 3.259000 seconds
+2025-11-07 16:39:42,344 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:39:45,086 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:39:45,087 [INFO] - Retrying request to /embeddings in 3.146000 seconds
+2025-11-07 16:39:51,170 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:39:53,938 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:39:53,939 [INFO] - Retrying request to /embeddings in 3.637000 seconds
+2025-11-07 16:40:01,480 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:40:04,122 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:40:04,122 [INFO] - Retrying request to /embeddings in 2.871000 seconds
+2025-11-07 16:40:09,603 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:40:11,809 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:40:11,809 [INFO] - Retrying request to /embeddings in 4.818000 seconds
+2025-11-07 16:40:19,590 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:40:22,815 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:40:22,815 [INFO] - Retrying request to /embeddings in 3.319000 seconds
+2025-11-07 16:40:29,034 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:40:31,717 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:40:31,718 [INFO] - Retrying request to /embeddings in 3.906000 seconds
+2025-11-07 16:40:38,549 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:40:41,229 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:40:41,229 [INFO] - Retrying request to /embeddings in 3.914000 seconds
+2025-11-07 16:40:47,985 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:40:51,188 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:40:51,188 [INFO] - Retrying request to /embeddings in 3.550000 seconds
+2025-11-07 16:40:59,629 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:41:02,486 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:41:02,487 [INFO] - Retrying request to /embeddings in 1.765000 seconds
+2025-11-07 16:41:06,874 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:41:09,409 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:41:09,410 [INFO] - Retrying request to /embeddings in 4.158000 seconds
+2025-11-07 16:41:16,472 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:41:19,956 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:41:19,956 [INFO] - Retrying request to /embeddings in 3.745000 seconds
+2025-11-07 16:41:26,831 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:41:29,906 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:41:29,906 [INFO] - Retrying request to /embeddings in 2.926000 seconds
+2025-11-07 16:41:35,493 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:41:38,106 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:41:38,107 [INFO] - Retrying request to /embeddings in 4.218000 seconds
+2025-11-07 16:41:44,788 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:41:47,225 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:41:47,225 [INFO] - Retrying request to /embeddings in 4.578000 seconds
+2025-11-07 16:41:54,738 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:41:57,198 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:41:57,198 [INFO] - Retrying request to /embeddings in 4.006000 seconds
+2025-11-07 16:42:03,752 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:42:06,262 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:42:06,262 [INFO] - Retrying request to /embeddings in 4.508000 seconds
+2025-11-07 16:42:14,420 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:42:17,103 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:42:17,103 [INFO] - Retrying request to /embeddings in 3.221000 seconds
+2025-11-07 16:42:24,179 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:42:26,739 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:42:26,739 [INFO] - Retrying request to /embeddings in 3.132000 seconds
+2025-11-07 16:42:33,183 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:42:36,143 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:42:36,144 [INFO] - Retrying request to /embeddings in 3.261000 seconds
+2025-11-07 16:42:42,465 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:42:45,484 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:42:45,485 [INFO] - Retrying request to /embeddings in 3.332000 seconds
+2025-11-07 16:42:51,692 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:42:54,148 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:42:54,148 [INFO] - Retrying request to /embeddings in 4.071000 seconds
+2025-11-07 16:43:01,014 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:43:03,732 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:43:03,732 [INFO] - Retrying request to /embeddings in 4.109000 seconds
+2025-11-07 16:43:10,796 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:43:13,015 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:43:13,016 [INFO] - Retrying request to /embeddings in 4.511000 seconds
+2025-11-07 16:43:20,454 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:43:22,592 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:43:22,592 [INFO] - Retrying request to /embeddings in 4.437000 seconds
+2025-11-07 16:43:30,355 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:43:33,254 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:43:33,254 [INFO] - Retrying request to /embeddings in 3.204000 seconds
+2025-11-07 16:43:39,213 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:43:42,267 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:43:42,268 [INFO] - Retrying request to /embeddings in 3.702000 seconds
+2025-11-07 16:43:48,779 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:43:51,147 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:43:51,148 [INFO] - Retrying request to /embeddings in 4.271000 seconds
+2025-11-07 16:43:58,687 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:44:01,143 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:44:01,144 [INFO] - Retrying request to /embeddings in 3.860000 seconds
+2025-11-07 16:44:08,009 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:44:10,806 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:44:10,806 [INFO] - Retrying request to /embeddings in 3.611000 seconds
+2025-11-07 16:44:17,228 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:44:19,937 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 429 Too Many Requests"
+2025-11-07 16:44:19,937 [INFO] - Retrying request to /embeddings in 3.966000 seconds
+2025-11-07 16:44:26,273 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:44:29,067 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:44:29,234 [INFO] -    ✅ Sucesso: 8233 chunks criados
+2025-11-07 16:44:29,235 [INFO] - 
+🎉 PROCESSAMENTO CONCLUÍDO!
+2025-11-07 16:44:29,235 [INFO] -    📊 Total de chunks criados: 20501
+2025-11-07 16:44:29,309 [INFO] -    📚 Collections no Chroma:
+2025-11-07 16:44:29,309 [INFO] -       - constitutional_docs: 617 documentos
+2025-11-07 16:44:29,309 [INFO] -       - human_rights_docs: 4557 documentos
+2025-11-07 16:44:29,309 [INFO] -       - consumer_docs: 15290 documentos
+2025-11-07 16:45:45,231 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 16:45:45,679 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 16:45:51,213 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 16:46:37,077 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:47:07,468 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:47:08,196 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:47:08,733 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:47:09,455 [INFO] - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-11-07 16:47:20,675 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:50:26,110 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 16:50:26,110 [INFO] - 🧹 Limpando banco de dados antigo em 'chroma_db'...
+2025-11-07 16:50:26,129 [INFO] -    ✅ Banco de dados antigo removido com sucesso.
+2025-11-07 16:50:26,129 [INFO] - 
+📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-07 16:50:26,130 [INFO] - ==================================================
+2025-11-07 16:50:26,130 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-07 16:50:26,130 [INFO] - 🔍 Procurando por: data
+2025-11-07 16:50:26,180 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 16:50:30,290 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 16:50:30,374 [INFO] - 
+📁 Processando: constitution -&gt; constitutional_law
+2025-11-07 16:50:30,374 [INFO] -    📄 Processando: CONSTITUICAO.md
+2025-11-07 16:50:43,891 [INFO] -    ✅ Sucesso: 617 chunks criados
+2025-11-07 16:50:43,891 [INFO] - 
+📁 Processando: direitos_humanos-oea -&gt; human_rights_law
+2025-11-07 16:50:43,892 [INFO] -    📄 Processando: Convencao Americana sobre Direitos Humanos - OEA.pdf
+2025-11-07 16:52:41,567 [INFO] -    ✅ Sucesso: 4557 chunks criados
+2025-11-07 16:52:41,567 [INFO] - 
+📁 Processando: economia -&gt; consumer_law
+2025-11-07 16:52:41,567 [INFO] -    📄 Processando: codigo_defesa_consumidor.pdf
+2025-11-07 16:55:40,088 [INFO] -    ✅ Sucesso: 7094 chunks criados
+2025-11-07 16:55:40,088 [INFO] -    📄 Processando: lei_responsabilidade_fiscal.pdf
+2025-11-07 16:59:11,952 [INFO] -    ✅ Sucesso: 8233 chunks criados
+2025-11-07 16:59:11,952 [INFO] - 
+🎉 PROCESSAMENTO CONCLUÍDO!
+2025-11-07 16:59:11,953 [INFO] -    📊 Total de chunks criados: 20501
+2025-11-07 16:59:12,104 [INFO] -    📚 Collections no Chroma:
+2025-11-07 16:59:12,104 [INFO] -       - consumer_docs: 15290 documentos
+2025-11-07 16:59:12,104 [INFO] -       - constitutional_docs: 617 documentos
+2025-11-07 16:59:12,104 [INFO] -       - human_rights_docs: 4557 documentos
+2025-11-07 16:59:58,257 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 16:59:58,699 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 17:00:00,926 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 17:00:03,354 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 17:00:07,259 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 17:00:09,237 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 17:00:11,638 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 17:00:13,857 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 17:00:15,857 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 17:00:32,927 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:00:40,820 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:04:51,580 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 17:04:51,580 [INFO] - 🧹 Limpando banco de dados antigo em 'chroma_db'...
+2025-11-07 17:04:51,595 [INFO] -    ✅ Banco de dados antigo removido com sucesso.
+2025-11-07 17:04:51,595 [INFO] - 
+📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-07 17:04:51,595 [INFO] - ==================================================
+2025-11-07 17:04:51,595 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-07 17:04:51,595 [INFO] - 🔍 Procurando por: data
+2025-11-07 17:04:51,601 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 17:04:54,013 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 17:04:54,102 [INFO] - 
+🚀 Iniciando processamento paralelo de 4 arquivos...
+2025-11-07 17:10:21,074 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 17:10:21,074 [INFO] - 🧹 Limpando banco de dados antigo em 'chroma_db'...
+2025-11-07 17:10:21,075 [INFO] -    ✅ Banco de dados antigo removido com sucesso.
+2025-11-07 17:10:21,075 [INFO] - 
+📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-07 17:10:21,075 [INFO] - ==================================================
+2025-11-07 17:10:21,075 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-07 17:10:21,075 [INFO] - 🔍 Procurando por: data
+2025-11-07 17:10:21,075 [INFO] - 
+🚀 Iniciando processamento paralelo de 4 arquivos...
+2025-11-07 17:11:03,250 [INFO] - 
+💾 Adicionando documentos processados ao banco de dados...
+2025-11-07 17:11:03,257 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 17:11:05,802 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 17:11:06,001 [INFO] -    Adicionando 617 chunks à coleção 'constitutional_docs'...
+2025-11-07 17:11:18,321 [INFO] -    Adicionando 4557 chunks à coleção 'human_rights_docs'...
+2025-11-07 17:12:53,222 [INFO] -    Adicionando 15327 chunks à coleção 'consumer_docs'...
+2025-11-07 17:18:23,263 [INFO] - 
+🎉 PROCESSAMENTO CONCLUÍDO!
+2025-11-07 17:18:23,263 [INFO] -    📊 Total de chunks criados: 20501
+2025-11-07 17:18:23,476 [INFO] -    📚 Collections no Chroma:
+2025-11-07 17:18:23,476 [INFO] -       - human_rights_docs: 4557 documentos
+2025-11-07 17:18:23,476 [INFO] -       - constitutional_docs: 617 documentos
+2025-11-07 17:18:23,476 [INFO] -       - consumer_docs: 15327 documentos
+2025-11-07 17:35:42,652 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 17:35:43,158 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 17:35:45,978 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 17:35:48,412 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 17:35:51,871 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 17:35:53,834 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 17:35:56,327 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 17:35:58,285 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 17:36:00,218 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 17:38:12,026 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:38:16,068 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 18:06:55,301 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 18:06:55,773 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 18:06:58,127 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:07:00,805 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:07:04,407 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:07:06,674 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:07:09,118 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:07:11,211 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:07:13,277 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 18:07:53,443 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 18:08:57,415 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 18:13:45,180 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 18:13:45,180 [INFO] - 🧹 Limpando banco de dados antigo em 'chroma_db'...
+2025-11-07 18:13:45,194 [INFO] -    ✅ Banco de dados antigo removido com sucesso.
+2025-11-07 18:13:45,195 [INFO] - 
+📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-07 18:13:45,195 [INFO] - ==================================================
+2025-11-07 18:13:45,195 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-07 18:13:45,195 [INFO] - 🔍 Procurando por: data
+2025-11-07 18:13:45,195 [INFO] - 
+🚀 Iniciando processamento paralelo de 4 arquivos...
+2025-11-07 18:14:27,628 [INFO] - 
+💾 Adicionando documentos processados ao banco de dados...
+2025-11-07 18:14:27,634 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:14:29,925 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 18:14:29,977 [INFO] -    Adicionando 617 chunks à coleção 'constitutional_docs'...
+2025-11-07 18:14:42,497 [INFO] -    Adicionando 4557 chunks à coleção 'human_rights_docs'...
+2025-11-07 18:16:18,260 [INFO] -    Adicionando 15327 chunks à coleção 'consumer_docs'...
+2025-11-07 18:21:55,802 [INFO] - 
+🎉 PROCESSAMENTO CONCLUÍDO!
+2025-11-07 18:21:55,802 [INFO] -    📊 Total de chunks criados: 20501
+2025-11-07 18:21:55,884 [INFO] -    📚 Collections no Chroma:
+2025-11-07 18:21:55,884 [INFO] -       - human_rights_docs: 4557 documentos
+2025-11-07 18:21:55,884 [INFO] -       - consumer_docs: 15327 documentos
+2025-11-07 18:21:55,884 [INFO] -       - constitutional_docs: 617 documentos
+2025-11-07 18:29:06,823 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 18:29:08,219 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 18:29:11,136 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:29:13,894 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:29:17,421 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:29:19,395 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:29:21,663 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:29:24,087 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:29:26,264 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 18:29:41,838 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 18:29:49,418 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 18:51:43,221 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 18:51:43,669 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 18:51:45,898 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:51:48,566 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:51:51,966 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:51:53,947 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:51:56,231 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:51:58,223 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 18:52:00,201 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 18:52:16,014 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 18:52:25,345 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 18:59:38,168 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 18:59:42,211 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:06:06,310 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:14:55,272 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 19:14:55,776 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 19:14:57,889 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 19:15:00,449 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 19:15:04,064 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 19:15:06,070 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 19:15:08,397 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 19:15:10,393 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 19:15:12,452 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 19:15:24,830 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 19:58:34,700 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 19:58:35,756 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 19:58:38,910 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 19:58:41,495 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 19:58:44,925 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 19:58:47,151 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 19:58:49,473 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 19:58:51,440 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 19:58:53,398 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 20:00:00,019 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:00:24,835 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:00:32,707 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:01:01,726 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:01:05,356 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:01:34,661 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:01:39,589 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:02:02,635 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:05:03,109 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:15:45,462 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 20:15:45,907 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 20:15:48,161 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 20:15:50,612 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 20:15:54,406 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 20:15:56,521 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 20:15:59,086 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 20:16:01,113 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 20:16:03,172 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 20:16:23,047 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:16:31,745 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:16:51,597 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:16:58,577 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:17:21,721 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:17:27,573 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:17:46,763 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:17:56,412 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:18:14,932 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:18:40,091 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:18:44,161 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:19:00,422 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:19:18,817 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:19:28,420 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:19:48,474 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:20:13,456 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:20:24,487 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:20:51,988 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:20:56,277 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:21:18,119 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:21:34,021 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:21:50,714 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 20:57:47,905 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 20:57:47,905 [INFO] - 🧹 Limpando banco de dados antigo em 'chroma_db'...
+2025-11-07 20:57:47,920 [INFO] -    ✅ Banco de dados antigo removido com sucesso.
+2025-11-07 20:57:47,920 [INFO] - 
+📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-07 20:57:47,920 [INFO] - ==================================================
+2025-11-07 20:57:47,920 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-07 20:57:47,920 [INFO] - 🔍 Procurando por: data
+2025-11-07 20:57:47,921 [WARNING] -    ❌ Arquivo não encontrado, pulando: data\fiscal\lei_responsabilidade_fiscal.pdf
+2025-11-07 20:57:47,921 [INFO] - 
+🚀 Iniciando processamento paralelo de 3 arquivos...
+2025-11-07 20:58:26,329 [INFO] - 
+💾 Adicionando documentos processados ao banco de dados...
+2025-11-07 20:58:26,335 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 20:58:28,755 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 20:58:28,809 [INFO] -    Adicionando 617 chunks à coleção 'constitutional_docs'...
+2025-11-07 20:58:41,139 [INFO] -    Adicionando 4557 chunks à coleção 'human_rights_docs'...
+2025-11-07 21:00:20,613 [INFO] -    Adicionando 7094 chunks à coleção 'consumer_docs'...
+2025-11-07 21:03:04,519 [INFO] - 
+🎉 PROCESSAMENTO CONCLUÍDO!
+2025-11-07 21:03:04,519 [INFO] -    📊 Total de chunks criados: 12268
+2025-11-07 21:03:04,590 [INFO] -    📚 Collections no Chroma:
+2025-11-07 21:03:04,590 [INFO] -       - human_rights_docs: 4557 documentos
+2025-11-07 21:03:04,590 [INFO] -       - constitutional_docs: 617 documentos
+2025-11-07 21:03:04,590 [INFO] -       - consumer_docs: 7094 documentos
+2025-11-07 21:06:36,131 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 21:06:36,567 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 21:06:38,904 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:06:41,352 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:06:44,512 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:06:46,566 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:06:48,911 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:06:51,222 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:06:53,213 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 21:13:15,327 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:14:00,494 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:14:03,527 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:24:31,063 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 21:24:31,063 [INFO] - 🧹 Limpando banco de dados antigo em 'chroma_db'...
+2025-11-07 21:24:31,074 [INFO] -    ✅ Banco de dados antigo removido com sucesso.
+2025-11-07 21:24:31,074 [INFO] - 
+📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-07 21:24:31,074 [INFO] - ==================================================
+2025-11-07 21:24:31,074 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-07 21:24:31,074 [INFO] - 🔍 Procurando por: data
+2025-11-07 21:24:31,075 [WARNING] -    ❌ Arquivo não encontrado, pulando: data\fiscal\lei_responsabilidade_fiscal.pdf
+2025-11-07 21:24:31,075 [INFO] - 
+🚀 Iniciando processamento paralelo de 3 arquivos...
+2025-11-07 21:25:56,910 [INFO] - 
+💾 Adicionando documentos processados ao banco de dados...
+2025-11-07 21:25:57,041 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:26:00,112 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 21:26:00,210 [INFO] -    Adicionando 617 chunks à coleção 'constitutional_docs'...
+2025-11-07 21:26:21,898 [INFO] -    Adicionando 4557 chunks à coleção 'human_rights_docs'...
+2025-11-07 21:27:55,586 [INFO] -    Adicionando 7094 chunks à coleção 'consumer_docs'...
+2025-11-07 21:30:37,072 [INFO] - 
+🎉 PROCESSAMENTO CONCLUÍDO!
+2025-11-07 21:30:37,072 [INFO] -    📊 Total de chunks criados: 12268
+2025-11-07 21:30:37,328 [INFO] -    📚 Collections no Chroma:
+2025-11-07 21:30:37,329 [INFO] -       - consumer_docs: 7094 documentos
+2025-11-07 21:30:37,329 [INFO] -       - human_rights_docs: 4557 documentos
+2025-11-07 21:30:37,329 [INFO] -       - constitutional_docs: 617 documentos
+2025-11-07 21:31:49,262 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 21:31:52,550 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 21:31:58,493 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:32:00,978 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:32:03,656 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:32:05,655 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:32:08,079 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:32:10,294 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:32:12,258 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 21:32:26,587 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:32:36,867 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:33:12,424 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:33:16,034 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:37:32,245 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 21:37:32,245 [INFO] - 🧹 Limpando banco de dados antigo em 'chroma_db'...
+2025-11-07 21:37:32,256 [INFO] -    ✅ Banco de dados antigo removido com sucesso.
+2025-11-07 21:37:32,256 [INFO] - 
+📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-07 21:37:32,256 [INFO] - ==================================================
+2025-11-07 21:37:32,256 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-07 21:37:32,256 [INFO] - 🔍 Procurando por: data
+2025-11-07 21:37:32,257 [WARNING] -    ❌ Arquivo não encontrado, pulando: data\fiscal\lei_responsabilidade_fiscal.pdf
+2025-11-07 21:37:32,257 [INFO] - 
+🚀 Iniciando processamento paralelo de 3 arquivos...
+2025-11-07 21:38:55,648 [INFO] - 
+💾 Adicionando documentos processados ao banco de dados...
+2025-11-07 21:38:55,694 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:38:58,624 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 21:38:58,713 [INFO] -    Adicionando 604 chunks à coleção 'constitutional_docs'...
+2025-11-07 21:39:19,537 [INFO] -    Adicionando 184 chunks à coleção 'human_rights_docs'...
+2025-11-07 21:39:24,428 [INFO] -    Adicionando 273 chunks à coleção 'consumer_docs'...
+2025-11-07 21:39:31,924 [INFO] - 
+🎉 PROCESSAMENTO CONCLUÍDO!
+2025-11-07 21:39:31,925 [INFO] -    📊 Total de chunks criados: 1061
+2025-11-07 21:39:32,348 [INFO] -    📚 Collections no Chroma:
+2025-11-07 21:39:32,348 [INFO] -       - consumer_docs: 273 documentos
+2025-11-07 21:39:32,348 [INFO] -       - human_rights_docs: 184 documentos
+2025-11-07 21:39:32,348 [INFO] -       - constitutional_docs: 604 documentos
+2025-11-07 21:40:41,252 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 21:40:42,717 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 21:40:47,188 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:40:49,689 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:40:52,127 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:40:54,348 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:40:56,526 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:40:58,556 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:41:00,555 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 21:44:17,026 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:44:37,412 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:44:53,679 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:45:05,640 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:48:55,205 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 21:48:55,205 [INFO] - 🧹 Limpando banco de dados antigo em 'chroma_db'...
+2025-11-07 21:48:55,212 [INFO] -    ✅ Banco de dados antigo removido com sucesso.
+2025-11-07 21:48:55,212 [INFO] - 
+📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-07 21:48:55,212 [INFO] - ==================================================
+2025-11-07 21:48:55,212 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-07 21:48:55,213 [INFO] - 🔍 Procurando por: data
+2025-11-07 21:48:55,213 [WARNING] -    ❌ Arquivo não encontrado, pulando: data\fiscal\lei_responsabilidade_fiscal.pdf
+2025-11-07 21:48:55,213 [INFO] - 
+🚀 Iniciando processamento paralelo de 3 arquivos...
+2025-11-07 21:50:18,883 [INFO] - 
+💾 Adicionando documentos processados ao banco de dados...
+2025-11-07 21:50:19,014 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:50:21,831 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 21:50:21,916 [INFO] -    Adicionando 617 chunks à coleção 'constitutional_docs'...
+2025-11-07 21:50:40,464 [INFO] -    Adicionando 4557 chunks à coleção 'human_rights_docs'...
+2025-11-07 21:52:13,740 [INFO] -    Adicionando 7094 chunks à coleção 'consumer_docs'...
+2025-11-07 21:54:44,196 [INFO] - 
+🎉 PROCESSAMENTO CONCLUÍDO!
+2025-11-07 21:54:44,197 [INFO] -    📊 Total de chunks criados: 12268
+2025-11-07 21:54:44,491 [INFO] -    📚 Collections no Chroma:
+2025-11-07 21:54:44,492 [INFO] -       - constitutional_docs: 617 documentos
+2025-11-07 21:54:44,492 [INFO] -       - consumer_docs: 7094 documentos
+2025-11-07 21:54:44,492 [INFO] -       - human_rights_docs: 4557 documentos
+2025-11-07 21:55:44,269 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 21:55:45,677 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 21:55:49,996 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:55:52,618 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:55:55,326 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:55:57,355 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:55:59,841 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:56:02,100 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 21:56:04,133 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 21:56:25,231 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:56:29,392 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:56:49,275 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:57:11,666 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:57:19,402 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:58:09,399 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:58:14,675 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:58:42,310 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 21:58:45,781 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 22:13:57,737 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 22:13:57,738 [INFO] - 🧹 Limpando banco de dados antigo em 'chroma_db'...
+2025-11-07 22:13:57,748 [INFO] -    ✅ Banco de dados antigo removido com sucesso.
+2025-11-07 22:13:57,748 [INFO] - 
+📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-07 22:13:57,748 [INFO] - ==================================================
+2025-11-07 22:13:57,748 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-07 22:13:57,748 [INFO] - 🔍 Procurando por: data
+2025-11-07 22:13:57,754 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 22:14:00,322 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 22:14:00,408 [INFO] - 
+📁 Processando: constitution -> constitutional_law
+2025-11-07 22:14:00,409 [INFO] -    📄 Processando: CONSTITUICAO.md
+2025-11-07 22:14:00,454 [INFO] -    ✅ Sucesso: 0 chunks criados
+2025-11-07 22:14:00,454 [INFO] - 
+📁 Processando: direitos_humanos-oea -> human_rights_law
+2025-11-07 22:14:00,455 [INFO] -    📄 Processando: Convencao Americana sobre Direitos Humanos - OEA.pdf
+2025-11-07 22:14:47,793 [INFO] -    ✅ Sucesso: 0 chunks criados
+2025-11-07 22:14:47,793 [INFO] - 
+📁 Processando: economia -> consumer_law
+2025-11-07 22:14:47,794 [INFO] -    📄 Processando: codigo_defesa_consumidor.pdf
+2025-11-07 22:15:59,433 [INFO] -    ✅ Sucesso: 0 chunks criados
+2025-11-07 22:15:59,433 [INFO] - 
+📁 Processando: fiscal -> fiscal_law
+2025-11-07 22:15:59,434 [WARNING] -    ❌ Pasta não encontrada: data\fiscal
+2025-11-07 22:15:59,434 [INFO] - 
+🎉 PROCESSAMENTO CONCLUÍDO!
+2025-11-07 22:15:59,434 [INFO] -    📊 Total de chunks criados: 0
+2025-11-07 22:15:59,451 [INFO] -    📚 Collections no Chroma:
+2025-11-07 22:16:30,538 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 22:16:30,972 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 22:18:41,650 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 22:18:41,651 [INFO] - 🧹 Limpando banco de dados antigo em 'chroma_db'...
+2025-11-07 22:18:41,652 [INFO] -    ✅ Banco de dados antigo removido com sucesso.
+2025-11-07 22:18:41,652 [INFO] - 
+📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-07 22:18:41,652 [INFO] - ==================================================
+2025-11-07 22:18:41,652 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-07 22:18:41,652 [INFO] - 🔍 Procurando por: data
+2025-11-07 22:18:41,658 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 22:18:44,163 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 22:18:44,241 [INFO] - 
+📁 Processando: constitution -> constitutional_law
+2025-11-07 22:18:44,241 [INFO] -    📄 Processando: CONSTITUICAO.md
+2025-11-07 22:18:56,617 [INFO] -    ✅ Sucesso: 617 chunks criados
+2025-11-07 22:18:56,617 [INFO] - 
+📁 Processando: direitos_humanos-oea -> human_rights_law
+2025-11-07 22:18:56,617 [INFO] -    📄 Processando: Convencao Americana sobre Direitos Humanos - OEA.pdf
+2025-11-07 22:21:16,161 [INFO] -    ✅ Sucesso: 4557 chunks criados
+2025-11-07 22:21:16,161 [INFO] - 
+📁 Processando: economia -> consumer_law
+2025-11-07 22:21:16,161 [INFO] -    📄 Processando: codigo_defesa_consumidor.pdf
+2025-11-07 22:24:59,330 [INFO] -    ✅ Sucesso: 7094 chunks criados
+2025-11-07 22:24:59,331 [INFO] - 
+📁 Processando: fiscal -> fiscal_law
+2025-11-07 22:24:59,331 [WARNING] -    ❌ Pasta não encontrada: data\fiscal
+2025-11-07 22:24:59,331 [INFO] - 
+🎉 PROCESSAMENTO CONCLUÍDO!
+2025-11-07 22:24:59,331 [INFO] -    📊 Total de chunks criados: 12268
+2025-11-07 22:24:59,395 [INFO] -    📚 Collections no Chroma:
+2025-11-07 22:24:59,395 [INFO] -       - constitutional_docs: 617 documentos
+2025-11-07 22:24:59,396 [INFO] -       - consumer_docs: 7094 documentos
+2025-11-07 22:24:59,396 [INFO] -       - human_rights_docs: 4557 documentos
+2025-11-07 22:25:25,579 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-07 22:25:26,011 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-07 22:25:28,224 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 22:25:30,865 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 22:25:33,737 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 22:25:36,047 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 22:25:38,494 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 22:25:40,817 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-07 22:25:42,832 [INFO] - Sistema inicializado com sucesso!
+2025-11-07 22:26:04,893 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 22:26:13,228 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 22:28:12,535 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 22:28:17,134 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 22:28:43,356 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 22:29:14,222 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 22:29:22,253 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 05:42:49,023 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-08 05:42:49,032 [INFO] - 🧹 Limpando banco de dados antigo em 'chroma_db'...
+2025-11-08 05:42:49,768 [INFO] -    ✅ Banco de dados antigo removido com sucesso.
+2025-11-08 05:42:49,768 [INFO] - 
+📚 PROCESSANDO DOCUMENTOS JURÍDICOS
+2025-11-08 05:42:49,768 [INFO] - ==================================================
+2025-11-08 05:42:49,768 [INFO] - 📂 Diretório atual: D:\Projeto IA\PROJETOS\angent_contitucional_RAG-main
+2025-11-08 05:42:49,768 [INFO] - 🔍 Procurando por: data
+2025-11-08 05:42:49,861 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 05:42:55,210 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-08 05:42:58,637 [INFO] - 
+📁 Processando: constitution -> constitutional_law
+2025-11-08 05:42:58,638 [INFO] -    📄 Processando: CONSTITUICAO.md
+2025-11-08 05:43:17,312 [INFO] -    ✅ Sucesso: 617 chunks criados
+2025-11-08 05:43:17,313 [INFO] - 
+📁 Processando: direitos_humanos-oea -> human_rights_law
+2025-11-08 05:43:17,313 [INFO] -    📄 Processando: Convencao Americana sobre Direitos Humanos - OEA.pdf
+2025-11-08 05:45:04,295 [INFO] -    ✅ Sucesso: 68 chunks criados
+2025-11-08 05:45:04,295 [INFO] - 
+📁 Processando: economia -> consumer_law
+2025-11-08 05:45:04,295 [INFO] -    📄 Processando: codigo_defesa_consumidor.pdf
+2025-11-08 05:47:24,449 [INFO] -    ✅ Sucesso: 107 chunks criados
+2025-11-08 05:47:24,449 [INFO] - 
+📁 Processando: fiscal -> fiscal_law
+2025-11-08 05:47:24,450 [WARNING] -    ❌ Pasta não encontrada: data\fiscal
+2025-11-08 05:47:24,450 [INFO] - 
+🎉 PROCESSAMENTO CONCLUÍDO!
+2025-11-08 05:47:24,450 [INFO] -    📊 Total de chunks criados: 792
+2025-11-08 05:47:24,750 [INFO] -    📚 Collections no Chroma:
+2025-11-08 05:47:24,751 [INFO] -       - constitutional_docs: 617 documentos
+2025-11-08 05:47:24,751 [INFO] -       - consumer_docs: 107 documentos
+2025-11-08 05:47:24,751 [INFO] -       - human_rights_docs: 68 documentos
+2025-11-08 06:12:03,447 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-08 06:12:04,039 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-08 06:12:08,179 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 06:12:11,040 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 06:12:13,347 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 06:12:15,296 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 06:12:17,492 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 06:12:19,491 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 06:12:21,864 [INFO] - Sistema inicializado com sucesso!
+2025-11-08 06:12:51,925 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 06:13:01,746 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 06:13:31,561 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 06:13:37,626 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 06:13:56,090 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 06:14:04,365 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 06:14:21,362 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 06:14:25,066 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 06:14:28,956 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 06:15:04,589 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 06:21:42,800 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-08 06:21:43,240 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-08 06:21:46,548 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 06:21:49,242 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 06:21:51,170 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 06:21:53,083 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 06:21:55,021 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 06:21:56,947 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 06:21:58,860 [INFO] - Sistema inicializado com sucesso!
+2025-11-08 06:22:16,131 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 06:22:52,023 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 06:22:57,988 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 06:23:13,550 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 06:23:17,567 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:11:59,559 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-08 07:12:00,819 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-08 07:12:02,504 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:12:05,004 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:12:06,978 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:12:08,948 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:12:10,912 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:12:13,889 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:15:03,521 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-08 07:15:04,602 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-08 07:15:06,064 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:15:08,589 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:15:10,541 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:15:12,541 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:15:14,490 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:15:17,499 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:15:19,263 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:15:20,202 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:17:46,396 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-08 07:17:47,503 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-08 07:17:48,931 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:17:51,458 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:17:53,410 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:17:55,377 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:17:57,327 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:18:00,229 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:18:02,698 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:18:03,618 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:18:04,906 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:20:17,520 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-08 07:20:18,608 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-08 07:20:20,010 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:20:22,500 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:20:24,481 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:20:26,469 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:20:28,427 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:20:31,496 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:20:33,248 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:20:36,412 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:20:45,019 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:24:36,499 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-08 07:24:37,581 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-08 07:24:38,983 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:24:41,402 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:24:43,431 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:24:45,572 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:24:49,464 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:24:50,678 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:24:51,491 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:24:58,030 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:27:36,172 [INFO] - ✅ Logger inicializado com sucesso.
+2025-11-08 07:27:37,145 [INFO] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-08 07:27:39,222 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:27:41,673 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:27:43,705 [INFO] - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-11-08 07:27:47,344 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:27:48,802 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:27:49,662 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-08 07:27:54,301 [INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

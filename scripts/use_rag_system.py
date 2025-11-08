@@ -87,7 +87,9 @@ class RAGJuridicoSystem:
         formatted.append(f"{response['final_answer']}")
 
         # ✅ CORREÇÃO: Mostra detalhes apenas se não for "fora do escopo"
-        if response.get("status") != "out_of_scope":
+        if response.get("status") != "out_of_scope" and response.get(
+            "routing_decision"
+        ):
             formatted.append("")  # Linha em branco
             formatted.append("🎯 **DETALHES:**")
             formatted.append(
@@ -101,11 +103,20 @@ class RAGJuridicoSystem:
             if isinstance(domains, str):
                 domains = [domains]
             formatted.append(f"   • Domínios: {', '.join(domains)}")
-
             formatted.append(f"   • Confiança: {response.get('confidence', 0):.2f}")
-            formatted.append(
-                f"   • Fontes consultadas: {len(response.get('sources', []))}"
-            )
+
+            # ✅ CORREÇÃO: Trata a lista de fontes corretamente
+            sources = response.get("sources", [])
+            if sources:
+                # Remove duplicatas baseadas no nome do arquivo
+                unique_source_files = sorted(
+                    {s.get("file_name") for s in sources if s.get("file_name")}
+                )
+                formatted.append(
+                    f"   • Fontes consultadas: {len(unique_source_files)} ({', '.join(unique_source_files)})"  # noqa: E501
+                )
+            else:
+                formatted.append("   • Fontes consultadas: 0")
 
             # Decisão de roteamento (se disponível)
             if response.get("routing_decision"):

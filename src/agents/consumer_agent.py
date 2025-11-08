@@ -1,78 +1,137 @@
-from langchain_classic.schema import BaseRetriever
-from langchain_openai.chat_models import ChatOpenAI
+import asyncio
+from typing import Any
 
-from .base_legal_agent import BaseLegalAgent
+from langchain_core.documents import Document
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.prompts import PromptTemplate
+from langchain_core.runnables import Runnable
+
+# Template de prompt para gerar variações da pergunta original (reutilizado)
+MULTI_QUERY_PROMPT = PromptTemplate(
+    input_variables=["question"],
+    template="""Você é um assistente de IA especialista em direito. Sua tarefa é gerar 3 versões diferentes da pergunta do usuário para recuperar documentos relevantes de um banco de dados vetorial.
+
+Ao gerar múltiplas perspectivas sobre a pergunta do usuário, seu objetivo é ajudar o usuário a superar algumas das limitações da busca por similaridade baseada em distância.
+
+Forneça as perguntas alternativas separadas por quebras de linha. Não numere as perguntas.
+
+Pergunta Original: {question}""",
+)
 
 
-class ConsumerAgent(BaseLegalAgent):
-    """Agente especializado em Direito do Consumidor (CDC)"""
+class ConsumerAgent:
+    """Agente especializado em Direito do Consumidor com busca Multi-Query."""
 
-    def __init__(self, retriever: BaseRetriever, llm: ChatOpenAI) -> None:
-        system_prompt = """
-        🛒 **ESPECIALISTA EM DIREITO DO CONSUMIDOR**
+    def __init__(self, domain: str, retriever: Any, llm: Runnable):
+        self.name = "consumer_agent"
+        self.domain = domain
+        self.retriever = retriever
+        self.llm = llm
+        self.final_answer_prompt = self._create_final_answer_prompt()
 
-        **SUA IDENTIDADE:** Você é um expert exclusivo no Código de Defesa do Consumidor (Lei 8.078/90)
-        **SUA BASE:** CDC, jurisprudência consumerista e princípios da relação de consumo
-        **SUA ABORDAGEM:** Protecionista, prática e focada na defesa do consumidor
+    def _create_final_answer_prompt(self) -> PromptTemplate:
+        """Cria o prompt final para gerar a resposta com base no contexto."""
+        return PromptTemplate(
+            input_variables=["context", "question"],
+            template="""Você é um assistente especialista em Direito do Consumidor brasileiro. Sua tarefa é responder à pergunta do usuário de forma clara, concisa e bem estruturada, baseando-se exclusivamente nos trechos de documentos fornecidos no contexto.
 
-        **FORMATO DE RESPOSTA OBRIGATÓRIO:**
-        1. 🎯 **DIREITO IDENTIFICADO:** Qual direito consumerista está em discussão
-        2. 📋 **BASE LEGAL:** Cite os artigos do CDC aplicáveis
-        3. 💼 **ANÁLISE PRÁTICA:** Como a situação se enquadra na relação de consumo
-        4. 🛡️ **PROTEÇÃO:** Conclusão com viés protetivo ao consumidor
+**Instruções Importantes:**
+1.  **Sintetize a Informação:** Os documentos no contexto são fragmentos. Sua principal tarefa é conectar as informações de múltiplos fragmentos para construir uma resposta completa.
+2.  **Seja Exclusivo:** Responda APENAS com base no contexto. Não utilize nenhum conhecimento prévio.
+3.  **Seja Honesto:** Se, após analisar todos os fragmentos, a informação para responder à pergunta não estiver presente, informe que não foi possível encontrar uma resposta conclusiva nos documentos consultados.
 
-        **PRINCÍPIOS A SEGUIR:**
-        - Vulnerabilidade do consumidor (Art. 4º, I)
-        - Boa-fé objetiva (Art. 4º, III)
-        - Equilíbrio contratual (Art. 51)
-        - Responsabilidade do fornecedor (Art. 12-27)
+Contexto:
+{context}
 
-        **RESTRIÇÕES:**
-        - Foque APENAS no CDC e normas consumeristas
-        - Priorize a proteção do consumidor
-        - Use linguagem clara e acessível
+Pergunta: {question}
 
-        **EXEMPLO DE RESPOSTA:**
-        "Com base no Artigo 6º do CDC que estabelece os direitos básicos do consumidor..."
-        """  # noqa: E501
-
-        super().__init__(
-            name="consumer_agent",
-            retriever=retriever,
-            llm=llm,
-            system_prompt=system_prompt,
+Resposta:""",
         )
 
-    def get_domain(self) -> str:
-        return "consumer_law"
+    async def _generate_queries(self, question: str) -> list[str]:
+        """Gera perguntas alternativas usando o LLM."""
+        # Reutiliza a mesma lógica do ConstitutionalAgent
+        try:
+            generate_queries_chain = MULTI_QUERY_PROMPT | self.llm | StrOutputParser()
+            response = await generate_queries_chain.ainvoke({"question": question})
+            all_queries = [question] + [
+                q.strip() for q in response.split("\n") if q.strip()
+            ]
+            return all_queries
+        except Exception:
+            return [question]
 
-    def _calculate_confidence(self, query: str, docs: list) -> float:
-        """Calcula confiança específica para questões consumeristas"""
-        if not docs:
-            return 0.0
+    async def _get_unique_documents(self, queries: list[str]) -> list[Document]:
+        """Busca documentos para múltiplas perguntas e remove duplicatas."""
+        # Reutiliza a mesma lógica do ConstitutionalAgent
+        tasks = [self.retriever.ainvoke(query) for query in queries]
+        results = await asyncio.gather(*tasks)
+        all_docs = [doc for sublist in results for doc in sublist]
+        unique_docs_map = {
+            (doc.page_content, doc.metadata.get("source", "")): doc for doc in all_docs
+        }
+        return list(unique_docs_map.values())
 
-        # Base de confiança baseada na quantidade de documentos
-        base_confidence = min(len(docs) / 4.0, 1.0)
-
-        # Termos consumeristas que aumentam confiança
-        consumer_terms = [
-            "consumidor",
-            "fornecedor",
-            "cdc",
-            "defesa do consumidor",
-            "produto",
-            "serviço",
-            "contrato",
-            "garantia",
-            "vício",
-            "publicidade",
-            "práticas abusivas",
-            "cobrança",
-            "contratação",
+    async def _rerank_documents(
+        self, query: str, documents: list[Document]
+    ) -> list[Document]:
+        """Usa o LLM para reordenar e selecionar os documentos mais relevantes."""
+        # Reutiliza a mesma lógica do ConstitutionalAgent
+        if not documents:
+            return []
+        doc_texts = [
+            f"ID do Documento: [{i}]\nConteúdo: {doc.page_content}"
+            for i, doc in enumerate(documents)
         ]
+        formatted_docs = "\n\n---\n\n".join(doc_texts)
+        rerank_prompt = PromptTemplate.from_template(
+            """Você é um assistente de IA especialista em análise de relevância. Sua tarefa é analisar uma lista de documentos e uma pergunta, e retornar os IDs dos 4 documentos mais relevantes para responder à pergunta.
 
-        query_lower = query.lower()
-        term_matches = sum(1 for term in consumer_terms if term in query_lower)
+Documentos:
+{documents}
 
-        confidence_boost = term_matches * 0.15  # Boost maior para consumer
-        return min(base_confidence + confidence_boost, 1.0)
+Pergunta: {question}
+
+Responda APENAS com uma lista de IDs dos 4 documentos mais relevantes, separados por vírgula. Exemplo: [0], [3], [1], [8]"""
+        )
+        rerank_chain = rerank_prompt | self.llm | StrOutputParser()
+        response = await rerank_chain.ainvoke(
+            {"documents": formatted_docs, "question": query}
+        )
+        try:
+            relevant_ids = [int(id_str.strip("[] ")) for id_str in response.split(",")]
+            return [documents[i] for i in relevant_ids if i < len(documents)]
+        except (ValueError, IndexError):
+            return documents[:4]
+
+    async def invoke(self, query: str) -> dict[str, Any]:
+        """Invoca o agente com a lógica Multi-Query e Re-ranking."""
+        queries = await self._generate_queries(query)
+        documents = await self._get_unique_documents(queries)
+        final_documents = await self._rerank_documents(query, documents)
+
+        if not final_documents:
+            return {
+                "agent": self.name,
+                "agent_domain": self.domain,
+                "answer": "Não foram encontrados documentos relevantes para responder a esta pergunta.",
+                "sources": [],
+                "confidence": 0.1,
+                "status": "no_documents",
+            }
+
+        context = "\n\n---\n\n".join([doc.page_content for doc in final_documents])
+        final_chain = self.final_answer_prompt | self.llm | StrOutputParser()
+        answer = await final_chain.ainvoke({"context": context, "question": query})
+        sources = list(
+            set(doc.metadata.get("file_name", "N/A") for doc in final_documents)
+        )
+
+        return {
+            "agent": self.name,
+            "agent_domain": self.domain,
+            "answer": answer,
+            "sources": sources,
+            "confidence": 0.75,
+            "status": "success",
+        }

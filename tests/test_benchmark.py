@@ -11,7 +11,7 @@ import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "src"))  # noqa: PTH118, PTH120
 
 try:
-    from multi_agent_manager import MultiAgentManager  # noqa: F401
+    from multi_agent_manager_old import MultiAgentManager  # noqa: F401
     from utils.logger import get_logger
 except ImportError as e:
     print(f"❌ Erro de import: {e}")

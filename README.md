@@ -47,19 +47,22 @@ Agora que a base está sólida, podemos focar em melhorias incrementais para aum
 
 ### FASE 1: REFINAMENTO E PRECISÃO (v0.1 → v0.2)
 
-1.  **Expansão de Contexto na Busca (v0.1):**
-    - **Proposta:** Implementar a técnica de **Geração de Múltiplas Perguntas (Multi-Query)**. O roteador, após identificar o domínio, geraria 2-3 variações da pergunta original para realizar buscas mais abrangentes, aumentando a chance de encontrar os melhores documentos.
-    - **Benefício:** Respostas mais completas e com maior score de confiança.
-2.  **Refinamento do Contexto Pós-Busca (v0.2):**
-    - **Proposta:** Implementar um **Re-ranker** (ex: `CohereReRank` ou um modelo Cross-Encoder local). Após o RRF Retriever trazer os 10 melhores documentos, o Re-ranker faria uma análise final para ordenar os 3-5 mais relevantes para a pergunta específica.
-    - **Benefício:** Aumenta drasticamente a precisão do contexto enviado ao LLM, reduzindo "ruído" e melhorando a qualidade da resposta final.
+1.  **✅ Expansão e Refinamento da Busca (v0.1 - CONCLUÍDO):**
+
+    - **Implementação:** A arquitetura dos agentes foi evoluída para um pipeline de duas etapas:
+      1.  **Expansão de Contexto (Multi-Query):** O agente gera múltiplas variações da pergunta do usuário para uma busca mais ampla.
+      2.  **Refinamento de Contexto (LLM-based Re-ranking):** O agente usa o próprio LLM para analisar os documentos encontrados e selecionar os 4 mais relevantes.
+    - **Benefício Alcançado:** Respostas significativamente mais precisas, completas e com menos falhas por "contexto perdido".
+
+2.  **Refinamento Avançado com Cross-Encoder (v0.2):**
+    - **Proposta:** Substituir o re-ranking baseado em LLM por um modelo **Cross-Encoder** especializado (ex: `cross-encoder/ms-marco-MiniLM-L-6-v2`).
+    - **Benefício:** Aumenta ainda mais a precisão do re-ranking, sendo mais rápido e barato que usar o LLM para esta tarefa, otimizando a performance e os custos do sistema.
 
 ### FASE 2: INTELIGÊNCIA E MEMÓRIA (v0.3 → v0.4)
 
 3.  **Memória Conversacional (v0.3):**
     - **Proposta:** Implementar um sistema de gerenciamento de histórico de conversa. O `MultiAgentManager` passaria o histórico relevante para os agentes, permitindo perguntas de acompanhamento (follow-up).
-    - **Exemplo:** "E quais são as exceções a esse direito?"
-    - **Benefício:** Transforma o sistema de um simples "pergunta e resposta" para um verdadeiro assistente conversacional.
+    - **Benefício:** Transforma o sistema de um simples "pergunta e resposta" para um verdadeiro assistente conversacional, capaz de entender o contexto de diálogos.
 4.  **Logging e Monitoramento Avançado (v0.4):**
     - **Proposta:** Registrar todas as interações (pergunta, decisão do roteador, resposta, confiança, fontes) em um formato estruturado (JSON ou banco de dados). Criar um dashboard simples (ex: com Streamlit ou Dash) para visualizar essas interações.
     - **Benefício:** Facilita a identificação de pontos fracos, perguntas mal respondidas e oportunidades de melhoria contínua.
