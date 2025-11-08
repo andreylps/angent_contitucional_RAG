@@ -71,16 +71,25 @@ Agora que a base está sólida, podemos focar em melhorias incrementais para aum
 
 ### FASE 3: INTERFACE E DEPLOY (v1.0)
 
-5.  **Criação de uma API (v0.5):**
+5.  **Fallback com Busca na Web (v0.5): - A IMPLANTAR**
+
+    - **Proposta:** Quando um agente não encontrar informações suficientes em sua base de documentos, ele deverá acionar uma ferramenta de busca na web como fallback. A busca será restrita a um conjunto de sites confiáveis (portais do governo, tribunais superiores, órgãos internacionais como OEA e ONU).
+    - **Benefício Esperado:** Aumenta drasticamente a capacidade do sistema de responder a uma gama maior de perguntas, mantendo um alto padrão de confiabilidade das fontes e alertando o usuário para validar informações externas.
+
+6.  **Criação de uma API (v0.6): - A IMPLANTAR**
+
     - **Proposta:** Expor o `MultiAgentManager` através de uma API REST simples usando **FastAPI**. Isso desacopla o backend da interface e permite que múltiplos clientes (web, mobile, etc.) consumam o serviço.
-6.  **Interface Web para Demonstração:**
+
+7.  **Interface Web para Demonstração (v0.7): - A IMPLANTAR**
+
     - **Proposta:** Construir uma interface de chat básica usando **Streamlit** ou **Gradio**. É rápido de implementar e perfeito para demonstrações e testes internos.
-7.  **Conteinerização e Deploy:**
+
+8.  **Conteinerização e Deploy (v0.8): - A IMPLANTAR**
     - **Proposta:** Empacotar a aplicação em um contêiner **Docker** para facilitar o deploy em qualquer ambiente de nuvem (AWS, GCP, Azure) ou servidor local.
 
 ### FASE 4: EXPANSÃO E ESCALABILIDADE (Pós-v1.0)
 
-8.  **Expansão do Time de Agentes (v1.1):**
+9.  **Expansão do Time de Agentes (v1.1):**
 
     - **Proposta:** Incluir novos agentes especialistas para cobrir mais áreas do direito, utilizando a arquitetura v0.1 como base.
       - **Agente de Direito Trabalhista** (Base: CLT)
@@ -88,13 +97,13 @@ Agora que a base está sólida, podemos focar em melhorias incrementais para aum
       - **Agente de Direito Tributário** (Base: Código Tributário Nacional)
     - **Benefício:** Aumenta drasticamente a utilidade e o escopo de aplicação do sistema.
 
-9.  **Evolução da Pipeline de Dados (v1.2):**
+10. **Evolução da Pipeline de Dados (v1.2):**
 
     - **Proposta:** Migrar a gestão de documentos de arquivos locais para um sistema mais robusto, capaz de lidar com atualizações constantes (adição e modificação de leis).
     - **Tecnologia Sugerida:** Utilizar um banco de dados vetorial gerenciado como **Pinecone**, **Weaviate** ou **Qdrant Cloud**, que simplificam a atualização e o versionamento de documentos.
     - **Benefício:** Garante que o sistema esteja sempre atualizado com a legislação mais recente, de forma automatizada e confiável.
 
-10. **Deploy em VPS com Alta Disponibilidade (v1.3):**
+11. **Deploy em VPS com Alta Disponibilidade (v1.3):**
     - **Proposta:** Criar uma infraestrutura de deploy robusta na VPS, focada em automação e resiliência.
     - **Tecnologias Sugeridas:** **Docker** e **Docker Compose** para containerização, **GitHub Actions** para CI/CD (implantação contínua), e ferramentas de monitoramento para garantir que o sistema se recupere de falhas automaticamente.
     - **Benefício:** Garante que a aplicação opere de forma robusta, automatizada e resiliente em um ambiente de produção.

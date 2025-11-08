@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 
 import pandas as pd
+import plotly.express as px
 import streamlit as st
 
 # Define o caminho para o arquivo de log
@@ -70,6 +71,36 @@ else:
     col1.metric("Total de Interações", f"{total_interactions}")
     col2.metric("Duração Média (s)", f"{avg_duration:.2f}")
     col3.metric("Taxa de Sucesso (%)", f"{success_rate:.2f}")
+
+    # --- Gráficos ---
+    st.header("Visualizações Gráficas")
+    col_chart1, col_chart2 = st.columns(2)
+
+    with col_chart1:
+        st.subheader("Uso de Agentes")
+        agent_usage = log_df["primary_agent"].value_counts().reset_index()
+        agent_usage.columns = ["Agente", "Contagem"]
+        fig_agent = px.pie(
+            agent_usage,
+            names="Agente",
+            values="Contagem",
+            title="Distribuição de Agentes Acionados",
+            hole=0.3,
+        )
+        st.plotly_chart(fig_agent, use_container_width=True)
+
+    with col_chart2:
+        st.subheader("Distribuição de Status")
+        status_dist = log_df["status"].value_counts().reset_index()
+        status_dist.columns = ["Status", "Contagem"]
+        fig_status = px.pie(
+            status_dist,
+            names="Status",
+            values="Contagem",
+            title="Distribuição de Status das Respostas",
+            hole=0.3,
+        )
+        st.plotly_chart(fig_status, use_container_width=True)
 
     # --- Tabela de Interações ---
     st.header("Últimas Interações")
